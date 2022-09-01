@@ -225,7 +225,7 @@ public class FileCacheUtil {
     }
     public CosXmlService getcosXmlService(Context context){
         QCloudCredentialProvider myCredentialProvider =
-                new ShortTimeCredentialProvider("AKIDoUwA9tNcdPu9nDLSLAMTWfky4GG2B7nN", "QaXP3SmmXiu0ybAf8qddaVPLpGUUzFLx", 1800);
+                new ShortTimeCredentialProvider("id", "key", 1800);
         // 存储桶所在地域简称，例如广州地区是 ap-guangzhou
         String region = "ap-shanghai";
 
