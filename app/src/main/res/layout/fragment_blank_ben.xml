@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ff0000ff"
+    tools:context=".ben.BlankFragment_ben">
+
+    <!-- TODO: Update blank fragment layout -->
+    <include layout="@layout/main_title"/>
+
+
+
+    <ListView
+        android:layout_marginTop="150dp"
+        android:layout_width="match_parent"
+
+        android:layout_height="400dp"
+        android:id="@+id/id_ben_lv"
+        android:background="#0fff0f"
+        >
+
+    </ListView>
+
+
+
+
+
+
+
+
+</FrameLayout>

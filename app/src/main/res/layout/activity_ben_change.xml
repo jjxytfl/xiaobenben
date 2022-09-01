@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ben.ben_ChangeActivity">
+
+    <include layout="@layout/activity_ben_new"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:background="#FF00FF">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/tab_weixin"
+            android:id="@+id/id_ben_change_pressed_imgbnt"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="一共有折磨多本"
+            android:id="@+id/id_ben_change_tv"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/tab_weixin"
+            android:id="@+id/id_ben_change_del_imgbnt"
+            />
+
+
+
+
+    </LinearLayout>
+
+
+    <ImageButton
+        android:layout_gravity="center"
+        android:layout_marginTop="256dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/tab_weixin"
+        android:id="@+id/id_ben_change_sure_imgbnt"
+        />
+
+
+
+
+</FrameLayout>

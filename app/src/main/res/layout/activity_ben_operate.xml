@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ben.ben_OperateActivity">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:background="#FF0000"
+        >
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/id_ben_operate_back_imgbnt"
+            android:background="@drawable/tab_weixin"/>
+
+        <TextView
+            android:layout_marginStart="64dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/id_ben_operate_tv1"
+            android:textSize="36dp"
+            android:text="书名"/>
+
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#00FF00"
+        >
+
+        <ListView
+            android:layout_width="256dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:id="@+id/id_ben_operate_lv"
+
+
+            />
+
+
+
+
+        <ImageButton
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:background="@drawable/pressed"
+            android:layout_gravity="center"
+            android:layout_marginTop="128dp"
+            android:id="@+id/id_ben_operate_newrj_imgbnt"
+            />
+
+
+
+
+    </FrameLayout>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:id="@+id/id_ben_operate_del_fl"
+        >
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/tab_weixin"
+            android:id="@+id/id_ben_operate_del_cancel_imgbnt"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="128dp"
+            android:id="@+id/id_ben_operate_del_tv"
+            android:textSize="32dp"
+            android:text="已选择折d15磨多"
+            />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/tab_weixin"
+            android:layout_marginStart="256dp"
+            android:id="@+id/id_ben_operate_del_sure_imgbnt"
+            />
+
+
+
+    </FrameLayout>
+
+
+
+
+
+</LinearLayout>

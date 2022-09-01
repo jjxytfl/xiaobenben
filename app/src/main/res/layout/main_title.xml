@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/id_main_title">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:orientation="horizontal"
+        android:background="#FF0000"
+        android:layout_gravity="center"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10dp"
+            android:background="#00FFFF"
+            android:gravity="center"
+            android:id="@+id/title1"
+            android:text="2022年02月22日"/>
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10dp"
+            android:background="#00FFFF"
+            android:gravity="center"
+            android:id="@+id/title2"
+            android:text="星期一"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="150dp"
+            android:background="#00FFFF"
+            android:gravity="center"
+            android:id="@+id/title3"
+            android:text="晴天"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="20dp"
+            android:background="#00FFFF"
+            android:gravity="center"
+            android:id="@+id/title4"
+            android:text="21℃"/>
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

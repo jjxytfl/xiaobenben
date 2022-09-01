@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="64dp"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/tab_weixin"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="我是日记内容1"
+        android:textSize="16dp"
+        android:id="@+id/id_ben_riji_tv1"
+        android:layout_marginStart="128dp"
+        android:layout_marginTop="12dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="我是日记内容2"
+        android:textSize="16dp"
+        android:id="@+id/id_ben_riji_tv2"
+        android:layout_marginStart="128dp"
+        android:layout_marginTop="32dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="我是时间啊啊啊啊"
+        android:textSize="8dp"
+        android:id="@+id/id_ben_riji_tv3"
+        android:layout_marginStart="258dp"
+        android:layout_marginTop="46dp"
+        />
+
+    <CheckBox
+        android:layout_width="64dp"
+        android:layout_height="32dp"
+        android:background="#ff0000"
+        android:id="@+id/id_ben_riji_cb"
+        android:backgroundTint="@color/black"
+        android:layout_marginStart="128dp"
+        android:layout_marginTop="16dp"
+        android:clickable="false"
+        />
+
+
+
+
+
+</FrameLayout>

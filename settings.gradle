@@ -1,0 +1,17 @@
+pluginManagement {
+    repositories {
+        google()
+        // 增加这行
+        mavenCentral()
+
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+rootProject.name = "xiaobenben"
+include ':app'

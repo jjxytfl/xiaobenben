@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="55dp"
+    android:background="@color/gray"
+    android:orientation="horizontal">
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:id="@+id/id_tab_weixin">
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_gravity="center"
+            android:background="@drawable/tab_weixin"
+            android:id="@+id/tab_iv_weixin">
+
+        </ImageView>
+
+        <TextView
+            android:layout_width="32dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/text_weixin"
+            android:layout_gravity="center"
+            android:text="本子"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:id="@+id/id_tab_weixin2">
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_gravity="center"
+            android:layout_height="32dp"
+            android:background="@drawable/tab_weixin"
+            android:id="@+id/tab_iv_weixin2">
+
+        </ImageView>
+
+        <TextView
+            android:layout_width="32dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/text_weixin2"
+            android:layout_gravity="center"
+            android:text="计划表"/>
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:id="@+id/id_tab_weixin3">
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_gravity="center"
+            android:layout_height="32dp"
+            android:background="@drawable/tab_weixin"
+            android:id="@+id/tab_iv_weixin3">
+
+        </ImageView>
+
+        <TextView
+            android:layout_width="32dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/text_weixin3"
+            android:layout_gravity="center"
+            android:text="闹钟"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:id="@+id/id_tab_weixin4">
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_gravity="center"
+            android:layout_height="32dp"
+            android:background="@drawable/tab_weixin"
+            android:id="@+id/tab_iv_weixin4">
+
+        </ImageView>
+
+        <TextView
+            android:layout_width="32dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/text_weixin4"
+            android:layout_gravity="center"
+            android:text="我"/>
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>
