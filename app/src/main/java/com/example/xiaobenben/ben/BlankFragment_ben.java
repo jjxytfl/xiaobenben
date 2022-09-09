@@ -13,6 +13,7 @@ import android.widget.AdapterView;
 import android.widget.ListView;
 
 import com.example.xiaobenben.R;
+import com.example.xiaobenben.biao.DailyTasksBiao.dailyTasksBiao_newActivity;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -122,6 +123,12 @@ public class BlankFragment_ben extends Fragment {
 //                builder.setMessage("确认删除？");
 //                builder.setTitle("提示");
 //                builder.create().show();
+
+
+
+
+
+
                 Intent intent = new Intent(context, ben_ChangeActivity.class);
                 intent.putExtra("ben",benList.get(i));
                 intent.putExtra("benid",i);

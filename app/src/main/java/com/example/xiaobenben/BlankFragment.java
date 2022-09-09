@@ -1,5 +1,6 @@
 package com.example.xiaobenben;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 
@@ -12,6 +13,9 @@ import android.view.ViewGroup;
 import android.widget.FrameLayout;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+
+import com.example.xiaobenben.ben.ben_ChangeActivity;
+import com.example.xiaobenben.biao.DailyTasksBiao.dailyTasksBiao_newActivity;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -69,8 +73,16 @@ public class BlankFragment extends Fragment {
         // Inflate the layout for this fragment
         if(rootview == null){
             rootview = inflater.inflate(R.layout.fragment_blank, container, false);
+
         }
         initView();
+
+
+
+
+
+
+
         return rootview;
 
     }

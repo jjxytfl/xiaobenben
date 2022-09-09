@@ -1,5 +1,7 @@
 package com.example.xiaobenben;
 
+import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -9,12 +11,16 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import com.example.xiaobenben.biao.DailyTasksBiao.dailyTasksBiao_newActivity;
+
 /**
  * A simple {@link Fragment} subclass.
  * Use the {@link BlankFragment_me#newInstance} factory method to
  * create an instance of this fragment.
  */
 public class BlankFragment_me extends Fragment {
+
+    public static Context context;
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -74,5 +80,9 @@ public class BlankFragment_me extends Fragment {
     private void initView() {
         TextView tv = root.findViewById(R.id.id_me_tv);
         tv.setText(mParam1);
+
+
+        Intent intent = new Intent(context, dailyTasksBiao_newActivity.class);
+        context.startActivity(intent);
     }
 }

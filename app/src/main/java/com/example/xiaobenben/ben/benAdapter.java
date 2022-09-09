@@ -20,7 +20,7 @@ import java.util.List;
 
 public class benAdapter extends BaseAdapter {
     private List<Ben> benList;
-    Context context;
+    private Context context;
 
     public benAdapter(List<Ben> benList, Context context) {
         this.benList = benList;

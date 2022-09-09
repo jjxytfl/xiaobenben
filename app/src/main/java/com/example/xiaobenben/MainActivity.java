@@ -115,6 +115,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         {
             BlankFragment_ben.context = this;
+            BlankFragment_me.context = this;
         }
 
         ArrayList<Fragment> fragments= new ArrayList<>();

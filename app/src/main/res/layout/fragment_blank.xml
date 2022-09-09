@@ -20,4 +20,11 @@
         android:textColor="#00ff00"
         android:text="hello_blank_fragment" />
 
+    <ListView
+        android:layout_marginTop="64dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FF000F"
+        />
+
 </FrameLayout>
