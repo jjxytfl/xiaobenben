@@ -30,6 +30,21 @@ android {
         viewBinding true
     }
     buildToolsVersion '32.1.0 rc1'
+
+
+    sourceSets {
+        main {
+            res.srcDirs = [
+                    'src/main/res/layout/ben',
+                    'src/main/res/layout/main',
+                    'src/main/res/layout/biao/dailyTasksBiao',
+                    'src/main/res/layout/biao',
+                    'src/main/res/layout',
+                    'src/main/res'
+            ]
+        }
+    }
+
 }
 
 dependencies {

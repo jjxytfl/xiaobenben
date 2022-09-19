@@ -13,7 +13,6 @@ import android.widget.AdapterView;
 import android.widget.ListView;
 
 import com.example.xiaobenben.R;
-import com.example.xiaobenben.biao.DailyTasksBiao.dailyTasksBiao_newActivity;
 
 import java.util.ArrayList;
 import java.util.List;

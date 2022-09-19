@@ -11,7 +11,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import com.example.xiaobenben.biao.DailyTasksBiao.dailyTasksBiao_newActivity;
+import com.example.xiaobenben.biao.DailyTasksBiao.dailyTasksBiao_NewActivity;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -82,7 +82,7 @@ public class BlankFragment_me extends Fragment {
         tv.setText(mParam1);
 
 
-        Intent intent = new Intent(context, dailyTasksBiao_newActivity.class);
+        Intent intent = new Intent(context, dailyTasksBiao_NewActivity.class);
         context.startActivity(intent);
     }
 }

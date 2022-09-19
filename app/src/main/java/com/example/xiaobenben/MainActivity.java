@@ -16,6 +16,7 @@ import android.widget.LinearLayout;
 
 import com.example.xiaobenben.ben.Ben;
 import com.example.xiaobenben.ben.BlankFragment_ben;
+import com.example.xiaobenben.biao.BlankFragment_biao;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -115,6 +116,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         {
             BlankFragment_ben.context = this;
+            BlankFragment_biao.context = this;
             BlankFragment_me.context = this;
         }
 
@@ -135,7 +137,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 //        }
 
         fragments.add(BlankFragment_ben.newInstance(benList));
-        fragments.add(BlankFragment.newInstance("txk",1));
+        fragments.add(BlankFragment_biao.newInstance("txk","321"));
         fragments.add(BlankFragment.newInstance("27",2));
         fragments.add(BlankFragment_me.newInstance("67867","me"));
 

@@ -1,7 +1,5 @@
 package com.example.xiaobenben;
 
-import android.content.Context;
-import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -11,11 +9,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.FrameLayout;
-import android.widget.LinearLayout;
 import android.widget.TextView;
-
-import com.example.xiaobenben.ben.ben_ChangeActivity;
-import com.example.xiaobenben.biao.DailyTasksBiao.dailyTasksBiao_newActivity;
 
 /**
  * A simple {@link Fragment} subclass.

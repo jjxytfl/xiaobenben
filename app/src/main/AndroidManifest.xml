@@ -16,7 +16,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Xiaobenben">
         <activity
-            android:name=".biao.DailyTasksBiao.dailyTasksBiao_newActivity"
+            android:name=".biao.DailyTasksBiao.dailyTasksBiao_HistoryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".biao.DailyTasksBiao.dailyTasksBiao_OperateActivity"
+            android:exported="false" />
+        <activity
+            android:name=".biao.DailyTasksBiao.dailyTasksBiao_NewActivity"
             android:exported="false" />
         <activity
             android:name=".ben.ben_ChangeActivity"
