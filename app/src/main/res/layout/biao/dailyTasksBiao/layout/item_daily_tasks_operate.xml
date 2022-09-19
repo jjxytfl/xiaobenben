@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="64dp"
+    android:orientation="horizontal">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_weight="1"
+
+        android:layout_height="match_parent"
+        android:text="计划名"
+        android:textSize="32dp"
+        android:gravity="center"
+        android:id="@+id/id_biao_dailyTasks_operarte_item_tv1"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_weight="1"
+
+        android:layout_height="match_parent"
+        android:text="时间"
+        android:textSize="32dp"
+        android:gravity="center"
+        android:id="@+id/id_biao_dailyTasks_operarte_item_tv2"
+        />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:background="@drawable/pressed"
+        android:id="@+id/id_biao_dailyTasks_operarte_item_imgbnt3"
+        />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_weight="5"
+
+        android:layout_height="match_parent"
+        android:hint="备注"
+        android:textSize="32dp"
+        android:id="@+id/id_biao_dailyTasks_operarte_item_et4"
+        />
+
+
+
+
+
+
+
+</LinearLayout>

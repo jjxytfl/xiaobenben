@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".biao.BlankFragment_biao">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <include layout="@layout/main_title"/>
+
+    <LinearLayout
+        android:layout_marginTop="128dp"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:background="#0f00ff"
+        android:orientation="horizontal"
+        >
+        <ImageButton
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:background="@drawable/pressed"
+            />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="计划表"
+            android:textSize="32dp"
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="300dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ListView
+            android:id="@+id/id_biao_lv"
+            android:layout_width="match_parent"
+            android:layout_height="256dp"
+            android:background="#0ff00f"
+
+
+            />
+
+
+        <ImageButton
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:background="@drawable/tab_weixin"
+            android:id="@+id/id_biao_add_imgbnt"
+            />
+
+
+    </LinearLayout>
+
+
+</FrameLayout>
