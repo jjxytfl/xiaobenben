@@ -43,7 +43,6 @@ public class ben_OperateAdapter extends BaseAdapter {
 
     @Override
     public View getView(int i, View view, ViewGroup viewGroup) {
-        //Log.d("1234", "getView: " + ben_OperateActivity.ischeck.size());
         if(view == null){
             view = LayoutInflater.from(ben_OperateActivity.context).inflate(R.layout.item_ben_riji,viewGroup,false);
         }
@@ -90,7 +89,7 @@ public class ben_OperateAdapter extends BaseAdapter {
 //            public boolean onLongClick(View view) {
 //                ben_OperateActivity.delRiji();
 //
-//                Log.d("1234", "onLongClick: ");
+//
 //
 //                return false;
 //            }

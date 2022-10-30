@@ -43,7 +43,6 @@ public class biaoAdapter extends BaseAdapter {
 
     @Override
     public View getView(int i, View view, ViewGroup viewGroup) {
-        Log.d("12345", "getView:  i "+i);
         if(view == null){
             view = LayoutInflater.from(context).inflate(R.layout.item_biao,viewGroup,false);
         }

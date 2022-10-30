@@ -44,7 +44,6 @@ public class ben_OperateActivity extends AppCompatActivity {
     public static void delRiji(){
         isMulChoice = true;
         fl.setVisibility(FrameLayout.VISIBLE);
-        Log.d("1234", "delRiji: ");
 
         lv.setAdapter(new ben_OperateAdapter(ben,context,i));
     }
@@ -62,6 +61,7 @@ public class ben_OperateActivity extends AppCompatActivity {
         ben = (Ben) getIntent().getSerializableExtra("benname");
 
         context = this;
+
 
 
         fl = findViewById(R.id.id_ben_operate_del_fl);
@@ -125,7 +125,6 @@ public class ben_OperateActivity extends AppCompatActivity {
         lv.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
             @Override
             public boolean onItemLongClick(AdapterView<?> adapterView, View view, int id, long l) {
-                Log.d("1234", "onItemLongClick: ");
                 isMulChoice = true;
                 fl.setVisibility(FrameLayout.VISIBLE);
 
@@ -178,7 +177,6 @@ public class ben_OperateActivity extends AppCompatActivity {
         intent.putExtra("123",ben);
         intent.putExtra("id",i);
 
-        Log.d("TAG", "onActivityResult:  跳出前" + ben .getRijiList().size());
 
         setResult(2,intent);
 

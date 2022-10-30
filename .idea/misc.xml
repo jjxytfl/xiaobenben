@@ -26,10 +26,11 @@
         <entry key="..\:/Users/31923/AndroidStudioProjects/xiaobenben/app/src/main/res/layout/ben/layout/item_ben.xml" value="0.21603260869565216" />
         <entry key="..\:/Users/31923/AndroidStudioProjects/xiaobenben/app/src/main/res/layout/ben/layout/item_ben_riji.xml" value="0.21603260869565216" />
         <entry key="..\:/Users/31923/AndroidStudioProjects/xiaobenben/app/src/main/res/layout/ben_riji_del.xml" value="0.12681159420289856" />
+        <entry key="..\:/Users/31923/AndroidStudioProjects/xiaobenben/app/src/main/res/layout/biao/dailyTasksBiao/layout/activity_daily_tasks_biao_history.xml" value="0.14842958459979735" />
         <entry key="..\:/Users/31923/AndroidStudioProjects/xiaobenben/app/src/main/res/layout/biao/dailyTasksBiao/layout/activity_daily_tasks_biao_new.xml" value="0.19791666666666666" />
         <entry key="..\:/Users/31923/AndroidStudioProjects/xiaobenben/app/src/main/res/layout/biao/dailyTasksBiao/layout/activity_daily_tasks_biao_operate.xml" value="0.19791666666666666" />
         <entry key="..\:/Users/31923/AndroidStudioProjects/xiaobenben/app/src/main/res/layout/biao/dailyTasksBiao/layout/item_daily_tasks.xml" value="0.19791666666666666" />
-        <entry key="..\:/Users/31923/AndroidStudioProjects/xiaobenben/app/src/main/res/layout/biao/dailyTasksBiao/layout/item_daily_tasks_operate.xml" value="0.19791666666666666" />
+        <entry key="..\:/Users/31923/AndroidStudioProjects/xiaobenben/app/src/main/res/layout/biao/dailyTasksBiao/layout/item_daily_tasks_operate.xml" value="0.13432835820895522" />
         <entry key="..\:/Users/31923/AndroidStudioProjects/xiaobenben/app/src/main/res/layout/biao/layout/fragment_blank_biao.xml" value="0.19791666666666666" />
         <entry key="..\:/Users/31923/AndroidStudioProjects/xiaobenben/app/src/main/res/layout/biao/layout/item_biao.xml" value="0.19791666666666666" />
         <entry key="..\:/Users/31923/AndroidStudioProjects/xiaobenben/app/src/main/res/layout/bottom_layout.xml" value="0.17300724637681159" />
@@ -45,6 +46,8 @@
         <entry key="..\:/Users/31923/AndroidStudioProjects/xiaobenben/app/src/main/res/layout/item_daily_tasks.xml" value="0.2484375" />
         <entry key="..\:/Users/31923/AndroidStudioProjects/xiaobenben/app/src/main/res/layout/item_daily_tasks_operate.xml" value="0.1480978260869565" />
         <entry key="..\:/Users/31923/AndroidStudioProjects/xiaobenben/app/src/main/res/layout/item_pager.xml" value="0.3482789855072464" />
+        <entry key="..\:/Users/31923/AndroidStudioProjects/xiaobenben/app/src/main/res/layout/main/layout/activity_main.xml" value="0.14842958459979735" />
+        <entry key="..\:/Users/31923/AndroidStudioProjects/xiaobenben/app/src/main/res/layout/main/layout/bottom_layout.xml" value="0.14842958459979735" />
         <entry key="..\:/Users/31923/AndroidStudioProjects/xiaobenben/app/src/main/res/layout/main_title.xml" value="0.31476449275362317" />
         <entry key="..\:/Users/31923/AndroidStudioProjects/xiaobenben/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.1" />
       </map>

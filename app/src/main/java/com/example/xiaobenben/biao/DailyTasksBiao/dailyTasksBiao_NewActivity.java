@@ -37,6 +37,7 @@ public class dailyTasksBiao_NewActivity extends AppCompatActivity {
         sureImgbnt.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
                 BlankFragment_biao.addBiao(dailyTasksBiao);
                 finish();
             }
@@ -49,9 +50,9 @@ public class dailyTasksBiao_NewActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 //判断最后一栏是否为空 ， 增加之后需要重新加载adapter
+                //10-30 上述方法避免不了名字为空 应该在为空时给出提示 或强制添加 name
                 if(!dailyTasksBiao.getDailyTasksItemList().get(dailyTasksBiao.getDailyTasksItemList().size()-1).getName().equals("")){
 
-                    Log.d("12345", "onClick: " + dailyTasksBiao.getDailyTasksItemList().get(dailyTasksBiao.getDailyTasksItemList().size()-1).getName());
 
                     dailyTasksBiao.addDailyTasksItem("Name","Time","Details");
                     lv.setAdapter(new dailyTasksAdapter(context, dailyTasksBiao));

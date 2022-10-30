@@ -48,17 +48,16 @@ public class dailyTasksAdapter extends BaseAdapter{
             view = LayoutInflater.from(context).inflate(R.layout.item_daily_tasks, viewGroup, false);
 
         }
-        Log.d("12345", "getView: sadasdasd");
 
 
         EditText et1 = view.findViewById(R.id.id_biao_dailyTasks_item_name_et1);
-        EditText et2 = view.findViewById(R.id.id_biao_dailyTasks_item_name_et2);
-        EditText et3 = view.findViewById(R.id.id_biao_dailyTasks_item_name_et3);
+        EditText et2 = view.findViewById(R.id.id_biao_dailyTasks_item_time_et2);
+        EditText et3 = view.findViewById(R.id.id_biao_dailyTasks_item_detail_et3);
 
 
         et1.setText(dailyTasksBiao.getDailyTasksItemList().get(i).getName());
-        et2.setText(dailyTasksBiao.getDailyTasksItemList().get(i).getDetails());
-        et3.setText(dailyTasksBiao.getDailyTasksItemList().get(i).getTime());
+        et2.setText(dailyTasksBiao.getDailyTasksItemList().get(i).getTime());
+        et3.setText(dailyTasksBiao.getDailyTasksItemList().get(i).getDetails());
 
 
         et1.addTextChangedListener(new TextWatcher() {

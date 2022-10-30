@@ -17,14 +17,40 @@ public class DailyTasksBiao extends Biao implements Serializable {
             this.time = time;
             this.completion = completion;
             this.details = details;
+            this.remarks = "";
         }
 
         public void setCompletion(String completion) {
             this.completion = completion;
         }
 
+        public boolean isCompletion(){
+            return completion.equals("YES");
+        }
+
+        public void setRemarks(String remarks) {
+            this.remarks = remarks;
+        }
+
+        public String getRemarks() {
+            return remarks;
+        }
+
+        public void setCompletion(boolean b){
+            if(b){
+                completion = "YES";
+            }else{
+                completion = "NO";
+            }
+        }
+
+        public String getCompletion() {
+            return completion;
+        }
+
         private String name;
         private String time;
+        private String remarks;
         private String completion;
         private String details;
 

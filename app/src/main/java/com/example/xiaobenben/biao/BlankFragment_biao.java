@@ -37,6 +37,11 @@ public class BlankFragment_biao extends Fragment {
         biao_lv.setAdapter(new biaoAdapter(context,biaoList));
     }
 
+    public static void modify(int i,Biao biao){
+        biaoList.set(i,biao);
+        biao_lv.setAdapter(new biaoAdapter(context,biaoList));
+    }
+
 
 
 

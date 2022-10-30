@@ -29,6 +29,13 @@
             android:layout_height="wrap_content"
             android:textSize="26dp"
             android:text="历史记录"
+            android:id="@+id/id_biao_dailyTasks_to_history_tv"
+            />
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/pressed"
+            android:id="@+id/id_biao_dailyTasks_operarte_sure_imgbnt"
             />
 
 
