@@ -15,11 +15,8 @@ import com.example.xiaobenben.biao.BlankFragment_biao;
 public class dailyTasksBiao_OperateActivity extends AppCompatActivity {
 
 
-    public static DailyTasksBiao dailyTasksBiao = new DailyTasksBiao();
+    public DailyTasksBiao dailyTasksBiao = new DailyTasksBiao();
 
-    public static void modify(DailyTasksBiao d){
-        dailyTasksBiao = d;
-    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,13 +37,16 @@ public class dailyTasksBiao_OperateActivity extends AppCompatActivity {
 
 
 
-        lv.setAdapter(new dailyTasks_OperateAdapter(this, dailyTasksBiao, new dailyTasks_OperateAdapter.addClickListener() {
-            @Override
-            public void addClick(int position,boolean isok) {
-                //jieshoudao
-                //daiding
-                dailyTasksBiao.getDailyTasksItemList().get(position).setCompletion(isok);
 
+
+        lv.setAdapter(new dailyTasks_OperateAdapter(this, dailyTasksBiao, new dailyTasks_OperateAdapter.dailyOperateClickListener() {
+            @Override
+            public void callback_Completion(int i,boolean com) {
+                dailyTasksBiao.getDailyTasksItemList().get(i).setCompletion(com);
+            }
+
+            public void callback_Remarks(int i,String remark){
+                dailyTasksBiao.getDailyTasksItemList().get(i).setRemarks(remark);
             }
         }));
 

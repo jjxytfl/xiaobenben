@@ -28,6 +28,13 @@ public class dailyTasksBiao_NewActivity extends AppCompatActivity {
 
         dailyTasksBiao = new DailyTasksBiao();
 
+
+        String biaoName = getIntent().getStringExtra("biaoName");
+
+        dailyTasksBiao.setBiaoName(biaoName);
+
+
+
         Context context = this;
         ListView lv = findViewById(R.id.id_biao_dailyTasks_new_lv);
         lv.setAdapter(new dailyTasksAdapter(this, dailyTasksBiao));
@@ -54,7 +61,7 @@ public class dailyTasksBiao_NewActivity extends AppCompatActivity {
                 if(!dailyTasksBiao.getDailyTasksItemList().get(dailyTasksBiao.getDailyTasksItemList().size()-1).getName().equals("")){
 
 
-                    dailyTasksBiao.addDailyTasksItem("Name","Time","Details");
+                    dailyTasksBiao.addDailyTasksItem("","","");
                     lv.setAdapter(new dailyTasksAdapter(context, dailyTasksBiao));
                 }else{
                     //弹出 提示： 请输入name

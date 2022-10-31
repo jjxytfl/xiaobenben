@@ -23,21 +23,22 @@ import java.util.ArrayList;
 public class dailyTasks_OperateAdapter extends BaseAdapter {
     private Context context;
     private DailyTasksBiao dailyTasksBiao;
-    private addClickListener listener;
+    private dailyOperateClickListener listener;
 
 
 
-    public static interface addClickListener{
-        public void addClick(int position,boolean isok);  //自行配置参数  需要传递到activity的值
+    public static interface dailyOperateClickListener{
+        public void callback_Completion(int i,boolean completion);  //自行配置参数  需要传递到activity的值
+        public void callback_Remarks(int i,String remark);
     }
 
-    public void setaddClicklistener(addClickListener listener){
+    public void setaddClicklistener(dailyOperateClickListener listener){
         this.listener = listener;
     }
 
 
 
-    public dailyTasks_OperateAdapter(Context context, DailyTasksBiao dailyTasksBiao , addClickListener listener) {
+    public dailyTasks_OperateAdapter(Context context, DailyTasksBiao dailyTasksBiao , dailyOperateClickListener listener) {
         this.context = context;
         this.dailyTasksBiao = dailyTasksBiao;
         this.listener = listener;
@@ -45,7 +46,7 @@ public class dailyTasks_OperateAdapter extends BaseAdapter {
 
     @Override
     public int getCount() {
-        return dailyTasksBiao_OperateActivity.dailyTasksBiao.getDailyTasksItemList().size();
+        return dailyTasksBiao.getDailyTasksItemList().size();
     }
 
     @Override
@@ -94,8 +95,7 @@ public class dailyTasks_OperateAdapter extends BaseAdapter {
             public void afterTextChanged(Editable editable) {
                 //改变后
                 dailyTasksBiao.getDailyTasksItemList().get(i).setRemarks(editable.toString());
-
-                dailyTasksBiao_OperateActivity.modify(dailyTasksBiao);
+                listener.callback_Remarks(i,editable.toString());
             }
         });
 
@@ -112,7 +112,7 @@ public class dailyTasks_OperateAdapter extends BaseAdapter {
                     completion_imgbnt3.setSelected(true);
                 }
                 //
-                listener.addClick(i,completion_imgbnt3.isSelected());
+                listener.callback_Completion(i,completion_imgbnt3.isSelected());
 
 
             }

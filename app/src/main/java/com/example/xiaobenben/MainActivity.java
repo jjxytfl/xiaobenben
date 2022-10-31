@@ -101,7 +101,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             int i = data.getIntExtra("id",0);
             //修改此处list<Ben>.get(i)的内容即可
 
-            Log.d("TAG", "onActivityResult: " + ben .getRijiList().size());
 
 
             benList.set(i,ben);
@@ -125,6 +124,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         Context context = this;
 
         FileCacheUtil fileCacheUtil = new FileCacheUtil();
+        //fileCacheUtil.qCloudDownload_benList(context);
         benList = new ArrayList();
         benList = fileCacheUtil.read_benlist(this);
 //        {
@@ -144,10 +144,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         MyFragmentPagerAdapter pagerAdapter = new MyFragmentPagerAdapter(getSupportFragmentManager(), getLifecycle(), fragments);
 
         viewPager.setAdapter(pagerAdapter);
-
-
-
-
 
 
 

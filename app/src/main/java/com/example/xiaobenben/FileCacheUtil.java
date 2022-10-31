@@ -224,6 +224,7 @@ public class FileCacheUtil {
         return benList;
     }
     public CosXmlService getcosXmlService(Context context){
+
         QCloudCredentialProvider myCredentialProvider =
                 new ShortTimeCredentialProvider("id", "key", 1800);
         // 存储桶所在地域简称，例如广州地区是 ap-guangzhou
@@ -260,6 +261,7 @@ public class FileCacheUtil {
         String cosPath = "bendata.txt"; //对象在存储桶中的位置标识符，即称对象键
 
         String srcPath = context.getFilesDir().getAbsoluteFile().getPath()+"/benData";
+        File file = new File(srcPath);
 
         //若存在初始化分块上传的 UploadId，则赋值对应的 uploadId 值用于续传；否则，赋值 null
         String uploadId = null;
@@ -281,6 +283,7 @@ public class FileCacheUtil {
             public void onSuccess(CosXmlRequest request, CosXmlResult result) {
                 COSXMLUploadTask.COSXMLUploadTaskResult uploadResult =
                         (COSXMLUploadTask.COSXMLUploadTaskResult) result;
+                Log.d("12345", "onSuccess: " + "ok");
             }
 
             // 如果您使用 kotlin 语言来调用，请注意回调方法中的异常是可空的，否则不会回调 onFail 方法，即：
@@ -339,7 +342,6 @@ public class FileCacheUtil {
             @Override
             public void onProgress(long complete, long target) {
                 // todo Do something to update progress...
-                Log.d("12345", "onProgress11: " + complete + "   " + target);
             }
         });
         //设置返回结果回调
@@ -348,7 +350,7 @@ public class FileCacheUtil {
             public void onSuccess(CosXmlRequest request, CosXmlResult result) {
                 COSXMLDownloadTask.COSXMLDownloadTaskResult downloadTaskResult =
                         (COSXMLDownloadTask.COSXMLDownloadTaskResult) result;
-                Log.d("12345", "onProgress22: " + request + "   " + result);
+                Log.d("12345", "onProgress22: " + "ok");
             }
 
             // 如果您使用 kotlin 语言来调用，请注意回调方法中的异常是可空的，否则不会回调 onFail 方法，即：

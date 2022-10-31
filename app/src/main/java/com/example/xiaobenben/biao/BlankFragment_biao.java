@@ -89,7 +89,9 @@ public class BlankFragment_biao extends Fragment {
         addImgbnt.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(context, dailyTasksBiao_NewActivity.class);
+
+
+                Intent intent = new Intent(context, biao_NewActivity.class);
                 context.startActivity(intent);
             }
         });

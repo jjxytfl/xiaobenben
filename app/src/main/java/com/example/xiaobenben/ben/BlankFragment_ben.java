@@ -125,9 +125,6 @@ public class BlankFragment_ben extends Fragment {
 
 
 
-
-
-
                 Intent intent = new Intent(context, ben_ChangeActivity.class);
                 intent.putExtra("ben",benList.get(i));
                 intent.putExtra("benid",i);

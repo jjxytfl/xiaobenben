@@ -82,7 +82,7 @@ public class BlankFragment_me extends Fragment {
         tv.setText(mParam1);
 
 
-        Intent intent = new Intent(context, dailyTasksBiao_NewActivity.class);
-        context.startActivity(intent);
+//        Intent intent = new Intent(context, dailyTasksBiao_NewActivity.class);
+//        context.startActivity(intent);
     }
 }
