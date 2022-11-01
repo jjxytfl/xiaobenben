@@ -126,15 +126,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         FileCacheUtil fileCacheUtil = new FileCacheUtil();
         //fileCacheUtil.qCloudDownload_benList(context);
         benList = new ArrayList();
-        benList = fileCacheUtil.read_benlist(this);
-//        {
-//            //benlist
-//            benList.add(new Ben("青蛙王子"));
-//            benList.add(new Ben("小天使"));
-//            benList.add(new Ben("大头子弹"));
-//            benList.add(new Ben("新建日记本"));
-//
-//        }
+        //benList = fileCacheUtil.read_benlist(this);
+        {
+            //benlist
+            benList.add(new Ben("青蛙王子"));
+            benList.add(new Ben("小天使"));
+            benList.add(new Ben("大头子弹"));
+            benList.add(new Ben("新建日记本"));
+
+        }
 
         fragments.add(BlankFragment_ben.newInstance(benList));
         fragments.add(BlankFragment_biao.newInstance("txk","321"));

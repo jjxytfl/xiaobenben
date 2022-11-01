@@ -36,8 +36,6 @@ public class dailyTasks_OperateAdapter extends BaseAdapter {
         this.listener = listener;
     }
 
-
-
     public dailyTasks_OperateAdapter(Context context, DailyTasksBiao dailyTasksBiao , dailyOperateClickListener listener) {
         this.context = context;
         this.dailyTasksBiao = dailyTasksBiao;
@@ -113,7 +111,6 @@ public class dailyTasks_OperateAdapter extends BaseAdapter {
                 }
                 //
                 listener.callback_Completion(i,completion_imgbnt3.isSelected());
-
 
             }
         });
