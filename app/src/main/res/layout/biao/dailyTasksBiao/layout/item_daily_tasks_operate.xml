@@ -10,7 +10,7 @@
 
         android:layout_height="match_parent"
         android:text="计划名"
-        android:textSize="32dp"
+        android:textSize="25dp"
         android:gravity="center"
         android:id="@+id/id_biao_dailyTasks_operarte_item_tv1"
         />
@@ -21,7 +21,7 @@
 
         android:layout_height="match_parent"
         android:text="时间"
-        android:textSize="32dp"
+        android:textSize="20dp"
         android:gravity="center"
         android:id="@+id/id_biao_dailyTasks_operarte_item_tv2"
         />

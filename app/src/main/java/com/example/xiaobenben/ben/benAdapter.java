@@ -49,11 +49,11 @@ public class benAdapter extends BaseAdapter {
         }
 
         ImageView img = view.findViewById(R.id.id_item_ben);
-        if (i % 2 == 0) {
-            img.setBackgroundColor(0xffff0000);
-        } else {
-            img.setBackgroundColor(0xff00ffff);
-        }
+//        if (i % 2 == 0) {
+//            img.setBackgroundColor(0xffff0000);
+//        } else {
+//            img.setBackgroundColor(0xff00ffff);
+//        }
 
         TextView tv = view.findViewById(R.id.id_ben_tv);
         tv.setText(benList.get(i).getName());

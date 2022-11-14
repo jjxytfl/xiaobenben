@@ -13,131 +13,332 @@
         android:layout_height="62dp"
         >
 
+        <ImageButton
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:background="@drawable/tab_weixin"
+            android:layout_gravity="center"
+            android:id="@+id/id_biao_dailyTasks_history_back_imgbnt"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="XX计划表历史记录"
+            android:textSize="20dp"
+            android:layout_gravity="center"
+            android:id="@+id/id_biao_dailyTasks_history_tv"
+            />
+
+        <ImageButton
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:background="@drawable/tab_weixin"
+            android:layout_gravity="center"
+            android:id="@+id/id_biao_dailyTasks_history_change_imgbnt"
+            />
+
 
 
     </LinearLayout>
 
-
-    <GridLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="2"
-        android:columnCount="10"
-        android:rowCount="10"
-        >
-
-
-
-        <Button android:text="1" android:textSize="26sp" />
-        <Button android:text="2" android:textSize="26sp" />
-        <Button android:text="3" android:textSize="26sp" />
-        <Button android:text="+" android:textSize="26sp" />
-        <Button android:text="4" android:textSize="26sp" />
-        <Button android:text="5" android:textSize="26sp" />
-        <Button android:text="6" android:textSize="26sp" />
-        <Button android:text="-" android:textSize="26sp" />
-        <Button android:text="7" android:textSize="26sp" />
-        <Button android:text="8" android:textSize="26sp" />
-        <Button android:text="9" android:textSize="26sp" />
-        <Button android:text="*" android:textSize="26sp" />
-        <Button android:text="*" android:textSize="26sp" />
-        <Button android:text="." android:textSize="26sp" />
-        <Button android:text="=" android:textSize="26sp" />
-        <Button android:text="0" android:textSize="26sp" />
-
-
-
-
-
-    </GridLayout>
-
-
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="3"
-        >
+        android:layout_weight="1">
 
-        <com.github.mikephil.charting.charts.PieChart
-            android:id="@+id/id_biao_dailyTasks_history_pie_chart"
-            android:layout_marginStart="10dp"
+        
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="68dp"
+            android:text="周二"
+            android:textSize="16dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="周四"
+            android:textSize="16dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="135dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="周六"
+            android:textSize="16dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="198dp"/>
+
+        <GridLayout
+
+            android:layout_width="320dp"
+            android:layout_height="230dp"
+
+
+            android:layout_marginStart="64dp"
             android:layout_marginTop="32dp"
-            android:layout_width="250dp"
-            android:layout_height="250dp"/>
+
+            android:columnCount="10"
+            android:rowCount="7">
 
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="已完成：10%"
-            android:textSize="16dp"
-            android:layout_gravity="center"
-            android:layout_marginTop="130dp"
-            android:layout_marginStart="128dp"
-            android:id="@+id/id_biao_dailyTasks_history_complete_tv"
+            <ImageView
+                android:id="@+id/id_biao_dailyTasks_history_7d_11"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:background="@drawable/sl" />
 
-            />
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="未完成：10%"
-            android:textSize="16dp"
-            android:layout_gravity="center"
-            android:layout_marginStart="128dp"
-            android:layout_marginTop="155dp"
-            android:id="@+id/id_biao_dailyTasks_history_incomplete_tv"
+            <ImageView
+                android:id="@+id/id_biao_dailyTasks_history_7d_21"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:background="@drawable/sl" />
 
-            />
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="未操作：10%"
-            android:textSize="16dp"
-            android:layout_gravity="center"
-            android:layout_marginStart="128dp"
-            android:layout_marginTop="180dp"
-            android:id="@+id/id_biao_dailyTasks_history_noOperate_tv"
-            />
+            <ImageView
+                android:id="@+id/id_biao_dailyTasks_history_7d_31"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:background="@drawable/sl" />
+
+            <ImageView
+                android:id="@+id/id_biao_dailyTasks_history_7d_41"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:background="@drawable/sl" />
+
+            <ImageView
+                android:id="@+id/id_biao_dailyTasks_history_7d_51"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:background="@drawable/sl" />
+
+            <ImageView
+                android:id="@+id/id_biao_dailyTasks_history_7d_61"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:background="@drawable/sl" />
+
+            <ImageView
+                android:id="@+id/id_biao_dailyTasks_history_7d_71"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:background="@drawable/sl" />
+
+            <ImageView
+                android:id="@+id/id_biao_dailyTasks_history_7d_81"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:background="@drawable/sl" />
+
+            <ImageView
+                android:id="@+id/id_biao_dailyTasks_history_7d_91"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:background="@drawable/sl" />
+
+            <ImageView
+                android:id="@+id/id_biao_dailyTasks_history_7d_101"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:background="@drawable/sl" />
+
+            <ImageView android:id="@+id/id_biao_dailyTasks_history_7d_12" android:layout_width="32dp" android:layout_height="32dp"  android:background="@drawable/b" />
+            <ImageView android:id="@+id/id_biao_dailyTasks_history_7d_22" android:layout_width="32dp" android:layout_height="32dp"  android:background="@drawable/ql" />
+            <ImageView android:id="@+id/id_biao_dailyTasks_history_7d_32" android:layout_width="32dp" android:layout_height="32dp"  android:background="@drawable/qql" />
+            <ImageView android:id="@+id/id_biao_dailyTasks_history_7d_42" android:layout_width="32dp" android:layout_height="32dp"  android:background="@drawable/sl" />
+            <ImageView android:id="@+id/id_biao_dailyTasks_history_7d_52" android:layout_width="32dp" android:layout_height="32dp"  android:background="@drawable/ql" />
+            <ImageView android:id="@+id/id_biao_dailyTasks_history_7d_62" android:layout_width="32dp" android:layout_height="32dp"  android:background="@drawable/ql" />
+            <ImageView android:id="@+id/id_biao_dailyTasks_history_7d_72" android:layout_width="32dp" android:layout_height="32dp"  android:background="@drawable/sl" />
+            <ImageView android:id="@+id/id_biao_dailyTasks_history_7d_82" android:layout_width="32dp" android:layout_height="32dp"  android:background="@drawable/b" />
+            <ImageView android:id="@+id/id_biao_dailyTasks_history_7d_92" android:layout_width="32dp" android:layout_height="32dp"  android:background="@drawable/sl" />
+            <ImageView android:id="@+id/id_biao_dailyTasks_history_7d_102" android:layout_width="32dp" android:layout_height="32dp"  android:background="@drawable/qql" />
+
+            <ImageView android:id="@+id/id_biao_dailyTasks_history_7d_13" android:layout_width="32dp" android:layout_height="32dp"  android:background="@drawable/sl" />
+            <ImageView android:id="@+id/id_biao_dailyTasks_history_7d_23" android:layout_width="32dp" android:layout_height="32dp"  android:background="@drawable/sl" />
+            <ImageView android:id="@+id/id_biao_dailyTasks_history_7d_33" android:layout_width="32dp" android:layout_height="32dp"  android:background="@drawable/sl" />
+            <ImageView android:id="@+id/id_biao_dailyTasks_history_7d_43" android:layout_width="32dp" android:layout_height="32dp"  android:background="@drawable/sl" />
+            <ImageView android:id="@+id/id_biao_dailyTasks_history_7d_53" android:layout_width="32dp" android:layout_height="32dp"  android:background="@drawable/sl" />
+            <ImageView android:id="@+id/id_biao_dailyTasks_history_7d_63" android:layout_width="32dp" android:layout_height="32dp"  android:background="@drawable/sl" />
+            <ImageView android:id="@+id/id_biao_dailyTasks_history_7d_73" android:layout_width="32dp" android:layout_height="32dp"  android:background="@drawable/sl" />
+            <ImageView android:id="@+id/id_biao_dailyTasks_history_7d_83" android:layout_width="32dp" android:layout_height="32dp"  android:background="@drawable/sl" />
+            <ImageView android:id="@+id/id_biao_dailyTasks_history_7d_93" android:layout_width="32dp" android:layout_height="32dp"  android:background="@drawable/sl" />
+            <ImageView android:id="@+id/id_biao_dailyTasks_history_7d_103" android:layout_width="32dp" android:layout_height="32dp"  android:background="@drawable/sl" />
+
+            <ImageView android:id="@+id/id_biao_dailyTasks_history_7d_14" android:layout_width="32dp" android:layout_height="32dp"  android:background="@drawable/qql" />
+            <ImageView android:id="@+id/id_biao_dailyTasks_history_7d_24" android:layout_width="32dp" android:layout_height="32dp"  android:background="@drawable/sl" />
+            <ImageView android:id="@+id/id_biao_dailyTasks_history_7d_34" android:layout_width="32dp" android:layout_height="32dp"  android:background="@drawable/b" />
+            <ImageView android:id="@+id/id_biao_dailyTasks_history_7d_44" android:layout_width="32dp" android:layout_height="32dp"  android:background="@drawable/ql" />
+            <ImageView android:id="@+id/id_biao_dailyTasks_history_7d_54" android:layout_width="32dp" android:layout_height="32dp"  android:background="@drawable/sl" />
+            <ImageView android:id="@+id/id_biao_dailyTasks_history_7d_64" android:layout_width="32dp" android:layout_height="32dp"  android:background="@drawable/qql" />
+            <ImageView android:id="@+id/id_biao_dailyTasks_history_7d_74" android:layout_width="32dp" android:layout_height="32dp"  android:background="@drawable/sl" />
+            <ImageView android:id="@+id/id_biao_dailyTasks_history_7d_84" android:layout_width="32dp" android:layout_height="32dp"  android:background="@drawable/ql" />
+            <ImageView android:id="@+id/id_biao_dailyTasks_history_7d_94" android:layout_width="32dp" android:layout_height="32dp"  android:background="@drawable/qql" />
+            <ImageView android:id="@+id/id_biao_dailyTasks_history_7d_104" android:layout_width="32dp" android:layout_height="32dp"  android:background="@drawable/sl" />
+
+            <ImageView android:id="@+id/id_biao_dailyTasks_history_7d_15" android:layout_width="32dp" android:layout_height="32dp"  android:background="@drawable/ql" />
+            <ImageView android:id="@+id/id_biao_dailyTasks_history_7d_25" android:layout_width="32dp" android:layout_height="32dp"  android:background="@drawable/sl" />
+            <ImageView android:id="@+id/id_biao_dailyTasks_history_7d_35" android:layout_width="32dp" android:layout_height="32dp"  android:background="@drawable/b" />
+            <ImageView android:id="@+id/id_biao_dailyTasks_history_7d_45" android:layout_width="32dp" android:layout_height="32dp"  android:background="@drawable/qql" />
+            <ImageView android:id="@+id/id_biao_dailyTasks_history_7d_55" android:layout_width="32dp" android:layout_height="32dp"  android:background="@drawable/sl" />
+            <ImageView android:id="@+id/id_biao_dailyTasks_history_7d_65" android:layout_width="32dp" android:layout_height="32dp"  android:background="@drawable/ql" />
+            <ImageView android:id="@+id/id_biao_dailyTasks_history_7d_75" android:layout_width="32dp" android:layout_height="32dp"  android:background="@drawable/b" />
+            <ImageView android:id="@+id/id_biao_dailyTasks_history_7d_85" android:layout_width="32dp" android:layout_height="32dp"  android:background="@drawable/ql" />
+            <ImageView android:id="@+id/id_biao_dailyTasks_history_7d_95" android:layout_width="32dp" android:layout_height="32dp"  android:background="@drawable/b" />
+            <ImageView android:id="@+id/id_biao_dailyTasks_history_7d_105" android:layout_width="32dp" android:layout_height="32dp"  android:background="@drawable/qql" />
+
+            <ImageView android:id="@+id/id_biao_dailyTasks_history_7d_16" android:layout_width="32dp" android:layout_height="32dp"  android:background="@drawable/sl" />
+            <ImageView android:id="@+id/id_biao_dailyTasks_history_7d_26" android:layout_width="32dp" android:layout_height="32dp"  android:background="@drawable/sl" />
+            <ImageView android:id="@+id/id_biao_dailyTasks_history_7d_36" android:layout_width="32dp" android:layout_height="32dp"  android:background="@drawable/sl" />
+            <ImageView android:id="@+id/id_biao_dailyTasks_history_7d_46" android:layout_width="32dp" android:layout_height="32dp"  android:background="@drawable/sl" />
+            <ImageView android:id="@+id/id_biao_dailyTasks_history_7d_56" android:layout_width="32dp" android:layout_height="32dp"  android:background="@drawable/sl" />
+            <ImageView android:id="@+id/id_biao_dailyTasks_history_7d_66" android:layout_width="32dp" android:layout_height="32dp"  android:background="@drawable/sl" />
+            <ImageView android:id="@+id/id_biao_dailyTasks_history_7d_76" android:layout_width="32dp" android:layout_height="32dp"  android:background="@drawable/sl" />
+            <ImageView android:id="@+id/id_biao_dailyTasks_history_7d_86" android:layout_width="32dp" android:layout_height="32dp"  android:background="@drawable/sl" />
+            <ImageView android:id="@+id/id_biao_dailyTasks_history_7d_96" android:layout_width="32dp" android:layout_height="32dp"  android:background="@drawable/sl" />
+            <ImageView android:id="@+id/id_biao_dailyTasks_history_7d_106" android:layout_width="32dp" android:layout_height="32dp"  android:background="@drawable/sl" />
+
+            <ImageView android:id="@+id/id_biao_dailyTasks_history_7d_17" android:layout_width="32dp" android:layout_height="32dp"  android:background="@drawable/sl" />
+            <ImageView android:id="@+id/id_biao_dailyTasks_history_7d_27" android:layout_width="32dp" android:layout_height="32dp"  android:background="@drawable/sl" />
+            <ImageView android:id="@+id/id_biao_dailyTasks_history_7d_37" android:layout_width="32dp" android:layout_height="32dp"  android:background="@drawable/sl" />
+            <ImageView android:id="@+id/id_biao_dailyTasks_history_7d_47" android:layout_width="32dp" android:layout_height="32dp"  android:background="@drawable/sl" />
+            <ImageView android:id="@+id/id_biao_dailyTasks_history_7d_57" android:layout_width="32dp" android:layout_height="32dp"  android:background="@drawable/sl" />
+            <ImageView android:id="@+id/id_biao_dailyTasks_history_7d_67" android:layout_width="32dp" android:layout_height="32dp"  android:background="@drawable/sl" />
+            <ImageView android:id="@+id/id_biao_dailyTasks_history_7d_77" android:layout_width="32dp" android:layout_height="32dp"  android:background="@drawable/sl" />
+            <ImageView android:id="@+id/id_biao_dailyTasks_history_7d_87" android:layout_width="32dp" android:layout_height="32dp"  android:background="@drawable/sl" />
+            <ImageView android:id="@+id/id_biao_dailyTasks_history_7d_97" android:layout_width="32dp" android:layout_height="32dp"  android:background="@drawable/sl" />
+            <ImageView android:id="@+id/id_biao_dailyTasks_history_7d_107" android:layout_width="32dp" android:layout_height="32dp"  android:background="@drawable/sl" />
 
 
 
-        <ImageView
-            android:layout_width="16dp"
-            android:layout_height="16dp"
-            android:background="#0000ff"            android:layout_gravity="center"
-            android:layout_marginStart="65dp"
-            android:layout_marginTop="130dp"
-            />
+        </GridLayout>
 
-        <ImageView
-            android:layout_width="16dp"
-            android:layout_height="16dp"
-            android:background="#00ff00"
-            android:layout_gravity="center"
-            android:layout_marginStart="65dp"
-            android:layout_marginTop="155dp"
-            />
-        <ImageView
-            android:layout_width="16dp"
-            android:layout_height="16dp"
-            android:background="#ff0000"
-            android:layout_gravity="center"
-            android:layout_marginStart="65dp"
-            android:layout_marginTop="180dp"
-            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:layout_marginTop="270dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:textSize="20dp"
+                android:text="近两月完成情况"
+                android:layout_gravity="center"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="70dp">
 
 
 
 
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:text="少"
+                android:layout_gravity="center"/>
+
+            <ImageView android:id="@+id/id_biao_dailyTasks_history_7d_yl1" android:layout_width="32dp" android:layout_height="32dp"  android:background="@drawable/b" />
+            <ImageView android:id="@+id/id_biao_dailyTasks_history_7d_yl2" android:layout_width="32dp" android:layout_height="32dp"  android:background="@drawable/qql" />
+            <ImageView android:id="@+id/id_biao_dailyTasks_history_7d_yl3" android:layout_width="32dp" android:layout_height="32dp"  android:background="@drawable/ql" />
+            <ImageView android:id="@+id/id_biao_dailyTasks_history_7d_yl4" android:layout_width="32dp" android:layout_height="32dp"  android:background="@drawable/sl" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:text="多"
+                android:layout_gravity="center"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
 
 
     </FrameLayout>
 
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <com.github.mikephil.charting.charts.PieChart
+            android:id="@+id/id_biao_dailyTasks_history_pie_chart"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="32dp" />
 
 
+        <TextView
+            android:id="@+id/id_biao_dailyTasks_history_complete_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="128dp"
+            android:layout_marginTop="80dp"
+            android:text="已完成：10%"
+            android:textSize="16dp"
+
+            />
+
+        <TextView
+            android:id="@+id/id_biao_dailyTasks_history_incomplete_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="128dp"
+            android:layout_marginTop="105dp"
+            android:text="未完成：10%"
+            android:textSize="16dp"
+
+            />
+
+        <TextView
+            android:id="@+id/id_biao_dailyTasks_history_noOperate_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="128dp"
+            android:layout_marginTop="130dp"
+            android:text="未操作：10%"
+            android:textSize="16dp" />
 
 
+        <ImageView
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="65dp"
+            android:layout_marginTop="80dp"
+            android:background="#0000ff" />
 
+        <ImageView
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="65dp"
+            android:layout_marginTop="105dp"
+            android:background="#00ff00" />
+
+        <ImageView
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="65dp"
+            android:layout_marginTop="130dp"
+            android:background="#ff0000" />
+
+
+    </FrameLayout>
 
 
 </LinearLayout>

@@ -48,11 +48,11 @@ public class biao_NewActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_biao_new);
 
-        list.add("cpp");
         list.add("每日任务计划表");
-        list.add("python");
-        list.add("go");
-        list.add("c#");
+        list.add("日程计划表");
+        list.add("旅游计划表");
+        list.add("倒数计划表");
+        
         conSelect = list.get(0);
         context = this;
 

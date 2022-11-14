@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@drawable/bjt1"
     tools:context=".MainActivity">
 
 
@@ -14,7 +15,7 @@
         android:layout_height="0dp"
         android:layout_weight="1"
         android:id="@+id/viewPager"
-        android:background="#ff0000"
+        android:background="#00ff0000"
         >
 
     </androidx.viewpager2.widget.ViewPager2>

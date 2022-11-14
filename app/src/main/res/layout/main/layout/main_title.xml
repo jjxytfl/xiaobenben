@@ -2,24 +2,25 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="64dp"
+    android:layout_height="70dp"
+    android:background="#ff5f60f0"
     android:id="@+id/id_main_title">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="46dp"
         android:orientation="horizontal"
-        android:background="#FF0000"
-        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
         >
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_marginStart="10dp"
-            android:background="#00FFFF"
+            android:background="#0000FFFF"
             android:gravity="center"
             android:id="@+id/title1"
+            android:textSize="18dp"
             android:text="2022年02月22日"/>
 
 
@@ -28,17 +29,17 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_marginStart="10dp"
-            android:background="#00FFFF"
             android:gravity="center"
             android:id="@+id/title2"
+            android:textSize="18dp"
             android:text="星期一"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:layout_marginStart="150dp"
-            android:background="#00FFFF"
+            android:layout_marginStart="100dp"
             android:gravity="center"
+            android:textSize="18dp"
             android:id="@+id/title3"
             android:text="晴天"/>
 
@@ -47,9 +48,10 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_marginStart="20dp"
-            android:background="#00FFFF"
+            android:background="#0000FFFF"
             android:gravity="center"
             android:id="@+id/title4"
+            android:textSize="18dp"
             android:text="21℃"/>
 
 

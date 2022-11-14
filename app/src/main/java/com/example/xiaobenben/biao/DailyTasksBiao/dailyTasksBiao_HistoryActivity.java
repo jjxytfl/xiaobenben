@@ -46,8 +46,8 @@ public class dailyTasksBiao_HistoryActivity extends AppCompatActivity {
         //
 
         mPie.add(new PieEntry((float) 5,"eat1"));
-        mPie.add(new PieEntry(0,"eat2"));
-        mPie.add(new PieEntry(0,"eat3"));
+        mPie.add(new PieEntry(4,"eat2"));
+        mPie.add(new PieEntry(2,"eat3"));
 
 
         return mPie;
@@ -115,10 +115,14 @@ public class dailyTasksBiao_HistoryActivity extends AppCompatActivity {
         pieChart.setDrawEntryLabels(true);
         //是否绘制PieChart内部中心文本
         pieChart.setDrawCenterText(true);
+
+        //绘制代表文字
+        pieChart.setEntryLabelColor(Color.BLACK);
+        pieChart.setEntryLabelTextSize(15f);
         // 绘制内容value，设置字体颜色大小
         pieData.setDrawValues(true);
         pieData.setValueFormatter(new PercentFormatter());
-        pieData.setValueTextSize(10f);
+        pieData.setValueTextSize(15f);
         pieData.setValueTextColor(Color.BLACK);
 
         pieChart.setData(pieData);

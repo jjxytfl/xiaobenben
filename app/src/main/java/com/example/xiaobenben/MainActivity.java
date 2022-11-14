@@ -106,8 +106,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             benList.set(i,ben);
         }
 
-
-
     }
 
     private void initPager() {

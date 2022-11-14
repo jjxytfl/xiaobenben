@@ -1,23 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="55dp"
-    android:background="@color/gray"
-    android:orientation="horizontal">
+    android:layout_height="70dp"
+    android:orientation="horizontal"
+    android:background="#7f00ff00">
 
 
     <LinearLayout
+        android:layout_marginTop="5dp"
         android:layout_width="0dp"
         android:layout_height="match_parent"
         android:layout_weight="1"
-        android:layout_gravity="center"
         android:orientation="vertical"
         android:id="@+id/id_tab_weixin">
+
         <ImageView
             android:layout_width="32dp"
             android:layout_height="32dp"
             android:layout_gravity="center"
-            android:background="@drawable/tab_weixin"
+            android:background="@drawable/book_png51096"
             android:id="@+id/tab_iv_weixin">
 
         </ImageView>
@@ -27,11 +28,13 @@
             android:layout_height="wrap_content"
             android:id="@+id/text_weixin"
             android:layout_gravity="center"
-            android:text="本子"/>
+            android:textSize="18dp"
+            android:text=" 本"/>
     </LinearLayout>
 
 
     <LinearLayout
+        android:layout_marginTop="5dp"
         android:layout_width="0dp"
         android:layout_height="match_parent"
         android:layout_weight="1"
@@ -48,16 +51,18 @@
         </ImageView>
 
         <TextView
-            android:layout_width="32dp"
+            android:layout_width="48dp"
             android:layout_height="wrap_content"
             android:id="@+id/text_weixin2"
             android:layout_gravity="center"
-            android:text="计划表"/>
+            android:textSize="18dp"
+            android:text="计 划"/>
     </LinearLayout>
 
 
 
     <LinearLayout
+        android:layout_marginTop="5dp"
         android:layout_width="0dp"
         android:layout_height="match_parent"
         android:layout_weight="1"
@@ -68,21 +73,23 @@
             android:layout_width="32dp"
             android:layout_gravity="center"
             android:layout_height="32dp"
-            android:background="@drawable/tab_weixin"
+            android:background="@drawable/alarm_clock_main"
             android:id="@+id/tab_iv_weixin3">
 
         </ImageView>
 
         <TextView
-            android:layout_width="32dp"
+            android:layout_width="48dp"
             android:layout_height="wrap_content"
             android:id="@+id/text_weixin3"
             android:layout_gravity="center"
-            android:text="闹钟"/>
+            android:textSize="18dp"
+            android:text="闹  钟"/>
     </LinearLayout>
 
 
     <LinearLayout
+        android:layout_marginTop="5dp"
         android:layout_width="0dp"
         android:layout_height="match_parent"
         android:layout_weight="1"
@@ -103,7 +110,8 @@
             android:layout_height="wrap_content"
             android:id="@+id/text_weixin4"
             android:layout_gravity="center"
-            android:text="我"/>
+            android:textSize="18dp"
+            android:text=" 我"/>
     </LinearLayout>
 
 
