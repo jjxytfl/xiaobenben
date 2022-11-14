@@ -45,7 +45,7 @@
             android:layout_width="32dp"
             android:layout_gravity="center"
             android:layout_height="32dp"
-            android:background="@drawable/tab_weixin"
+            android:background="@drawable/biao3"
             android:id="@+id/tab_iv_weixin2">
 
         </ImageView>
@@ -100,7 +100,7 @@
             android:layout_width="32dp"
             android:layout_gravity="center"
             android:layout_height="32dp"
-            android:background="@drawable/tab_weixin"
+            android:background="@drawable/wo3"
             android:id="@+id/tab_iv_weixin4">
 
         </ImageView>

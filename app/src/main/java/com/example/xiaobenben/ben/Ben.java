@@ -35,6 +35,10 @@ public class Ben implements Serializable {
         return Name;
     }
 
+    public int getSize(){
+        return rijiList.size();
+    }
+
     public String getImgUrl() {
         return ImgUrl;
     }

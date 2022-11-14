@@ -15,6 +15,7 @@ import com.example.xiaobenben.R;
 import com.example.xiaobenben.ben.Ben;
 import com.example.xiaobenben.ben.ben_NewActivity;
 import com.example.xiaobenben.ben.ben_OperateActivity;
+import com.example.xiaobenben.control.LeanTextView;
 
 import java.util.List;
 
@@ -55,8 +56,16 @@ public class benAdapter extends BaseAdapter {
 //            img.setBackgroundColor(0xff00ffff);
 //        }
 
-        TextView tv = view.findViewById(R.id.id_ben_tv);
+        LeanTextView tv = view.findViewById(R.id.id_ben_tv);
         tv.setText(benList.get(i).getName());
+        tv.setmDegrees(-19);
+
+        LeanTextView tv2 = view.findViewById(R.id.id_ben_tv2);
+        tv2.setText("共有"+benList.get(i).getSize()+"篇记录");
+        tv2.setmDegrees(-19);
+
+
+        if(i == getCount() - 1)tv2.setText("");
 
 
         tv.setOnClickListener(new View.OnClickListener() {

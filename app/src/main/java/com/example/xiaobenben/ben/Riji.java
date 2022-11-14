@@ -56,10 +56,16 @@ public class Riji implements Serializable {
 
 
     public String getJianjie1() {
-        return jianjie1;
+        if(getContent().length()<=10){
+            return getContent();
+        }
+        return getContent().substring(0,10);
     }
 
     public String getJianjie2() {
-        return jianjie2;
+        if(getContent().length()<=20){
+            return "";
+        }
+        return getContent().substring(10,20);
     }
 }

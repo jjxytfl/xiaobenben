@@ -15,11 +15,16 @@
         android:layout_height="64dp"
         android:background="#FF0000"
         >
-        <ImageButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+        <com.example.xiaobenben.control.CircleImageView
+            android:layout_width="64dp"
+            android:layout_height="64dp"
             android:id="@+id/id_ben_operate_back_imgbnt"
-            android:background="@drawable/tab_weixin"/>
+            android:layout_centerInParent="true"
+            android:scaleType="centerCrop"
+
+            android:src="@drawable/back"
+            />
+
 
         <TextView
             android:layout_marginStart="64dp"
@@ -40,24 +45,25 @@
 
         <ListView
             android:layout_width="256dp"
-            android:layout_height="match_parent"
-            android:layout_gravity="center"
+            android:layout_height="512dp"
+            android:layout_marginStart="56dp"
             android:id="@+id/id_ben_operate_lv"
 
 
             />
 
-
-
-
-        <ImageButton
+        <com.example.xiaobenben.control.CircleImageView
             android:layout_width="64dp"
             android:layout_height="64dp"
-            android:background="@drawable/pressed"
             android:layout_gravity="center"
-            android:layout_marginTop="128dp"
+            android:layout_marginTop="236dp"
             android:id="@+id/id_ben_operate_newrj_imgbnt"
+            android:layout_centerInParent="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/jia2"
             />
+
+
 
 
 

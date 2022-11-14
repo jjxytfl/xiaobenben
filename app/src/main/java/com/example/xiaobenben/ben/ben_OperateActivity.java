@@ -15,6 +15,7 @@ import android.widget.ListView;
 import android.widget.TextView;
 
 import com.example.xiaobenben.R;
+import com.example.xiaobenben.control.CircleImageView;
 
 import java.util.HashMap;
 
@@ -137,7 +138,7 @@ public class ben_OperateActivity extends AppCompatActivity {
 
 
 
-        ImageButton backimgbnt = findViewById(R.id.id_ben_operate_back_imgbnt);
+        CircleImageView backimgbnt = findViewById(R.id.id_ben_operate_back_imgbnt);
         backimgbnt.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -147,7 +148,7 @@ public class ben_OperateActivity extends AppCompatActivity {
 
 
 
-        ImageButton newrjimgbnt = findViewById(R.id.id_ben_operate_newrj_imgbnt);
+        CircleImageView newrjimgbnt = findViewById(R.id.id_ben_operate_newrj_imgbnt);
         newrjimgbnt.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
