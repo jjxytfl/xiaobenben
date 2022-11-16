@@ -8,38 +8,58 @@
     tools:context=".ben.ben_riji_NewActivity">
 
 
-    <LinearLayout
+    <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="64dp"
         android:background="#ff00FF"
         >
 
 
-        <ImageButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@drawable/tab_weixin"
+        <com.example.xiaobenben.control.CircleImageView
+
+
+
+            android:layout_width="64dp"
+            android:layout_height="64dp"
             android:id="@+id/id_ben_riji_new_imgbnt1"
+            android:layout_centerInParent="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/back"
             />
+
 
         <TextView
+
+            android:layout_marginStart="128dp"
+            android:layout_marginTop="18dp"
+
+
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="字数：326448"
-            android:textSize="32dp"
+            android:text="字数：0"
+            android:textSize="16dp"
+            android:id="@+id/id_ben_riji_num_tv"
             />
 
-        <ImageButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@drawable/tab_weixin"
+
+        <com.example.xiaobenben.control.CircleImageView
+            android:layout_marginStart="340dp"
+
+
+            android:layout_width="64dp"
+            android:layout_height="64dp"
             android:id="@+id/id_ben_riji_new_imgbnt2"
+            android:layout_centerInParent="true"
+            android:scaleType="centerCrop"
+
+            android:src="@drawable/dui3"
             />
 
 
 
 
-    </LinearLayout>
+
+    </FrameLayout>
 
 
 
@@ -47,14 +67,21 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:background="#0000FF"
+        android:background="#000000FF"
         >
 
         <EditText
+            android:cursorVisible="true"
+
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+
+
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:id="@+id/id_ben_riji_new_et"
-            android:background="#00fff0"/>
+            android:gravity="top"
+            android:background="#0000fff0"/>
 
 
     </LinearLayout>
