@@ -18,7 +18,7 @@
             android:id="@+id/id_item_ben"
             android:layout_gravity="center"
 
-            android:background="@drawable/book_png51009"/>
+            android:background="@drawable/ben1"/>
 
 
 

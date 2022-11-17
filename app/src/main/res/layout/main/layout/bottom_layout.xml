@@ -18,7 +18,7 @@
             android:layout_width="32dp"
             android:layout_height="32dp"
             android:layout_gravity="center"
-            android:background="@drawable/book_png51096"
+            android:background="@drawable/ben"
             android:id="@+id/tab_iv_weixin">
 
         </ImageView>
@@ -100,7 +100,7 @@
             android:layout_width="32dp"
             android:layout_gravity="center"
             android:layout_height="32dp"
-            android:background="@drawable/wo3"
+            android:background="@drawable/wo5"
             android:id="@+id/tab_iv_weixin4">
 
         </ImageView>

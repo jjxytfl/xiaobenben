@@ -30,6 +30,16 @@ public class Ben implements Serializable {
         rijiList = new ArrayList<>();
     }
 
+    public Ben(String name, String img) {
+        Name = name;
+        //moren
+        ImgUrl = img;
+        count = 0;
+        rijiList = new ArrayList<>();
+    }
+
+
+
 
     public String getName() {
         return Name;
