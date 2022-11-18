@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
 
 
-    private LinearLayout ll1,ll2,ll3,ll4;
+    private LinearLayout ll1,ll2,ll3,ll4,llcur;
     private ImageView iv1,iv2,iv3,iv4,ivcur;
 
     private List<Ben> benList;
@@ -84,6 +84,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         iv2 = findViewById(R.id.tab_iv_weixin2);
         iv3 = findViewById(R.id.tab_iv_weixin3);
         iv4 = findViewById(R.id.tab_iv_weixin4);
+
+        llcur = ll1;
+        llcur.setBackgroundColor(0xaf00ff00);
 
 
 
@@ -176,34 +179,40 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     private void changeTab(int position) {
         ivcur.setSelected(false);
+        llcur.setBackgroundColor(0x7f00ff00);
         switch (position){
             case R.id.id_tab_weixin:
                 viewPager.setCurrentItem(0);
             case 0:
                 iv1.setSelected(true);
                 ivcur=iv1;
+                llcur = ll1;
                 break;
             case 1:
             case R.id.id_tab_weixin2:
                 viewPager.setCurrentItem(1);
                 iv2.setSelected(true);
                 ivcur=iv2;
+                llcur = ll2;
                 break;
             case 2:
             case R.id.id_tab_weixin3:
                 viewPager.setCurrentItem(2);
                 iv3.setSelected(true);
                 ivcur=iv3;
+                llcur = ll3;
                 break;
             case 3:
             case R.id.id_tab_weixin4:
                 viewPager.setCurrentItem(3);
                 iv4.setSelected(true);
                 ivcur=iv4;
+                llcur = ll4;
 
                 //tiaozhuan();
                 break;
         }
+        llcur.setBackgroundColor(0xaf00ff00);
     }
 
     @Override

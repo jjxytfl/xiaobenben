@@ -7,7 +7,6 @@
 
 
     <LinearLayout
-        android:layout_marginTop="5dp"
         android:layout_width="0dp"
         android:layout_height="match_parent"
         android:layout_weight="1"
@@ -15,6 +14,7 @@
         android:id="@+id/id_tab_weixin">
 
         <ImageView
+            android:layout_marginTop="10dp"
             android:layout_width="32dp"
             android:layout_height="32dp"
             android:layout_gravity="center"
@@ -34,7 +34,6 @@
 
 
     <LinearLayout
-        android:layout_marginTop="5dp"
         android:layout_width="0dp"
         android:layout_height="match_parent"
         android:layout_weight="1"
@@ -42,6 +41,7 @@
         android:orientation="vertical"
         android:id="@+id/id_tab_weixin2">
         <ImageView
+            android:layout_marginTop="10dp"
             android:layout_width="32dp"
             android:layout_gravity="center"
             android:layout_height="32dp"
@@ -62,7 +62,6 @@
 
 
     <LinearLayout
-        android:layout_marginTop="5dp"
         android:layout_width="0dp"
         android:layout_height="match_parent"
         android:layout_weight="1"
@@ -70,6 +69,7 @@
         android:orientation="vertical"
         android:id="@+id/id_tab_weixin3">
         <ImageView
+            android:layout_marginTop="10dp"
             android:layout_width="32dp"
             android:layout_gravity="center"
             android:layout_height="32dp"
@@ -89,7 +89,6 @@
 
 
     <LinearLayout
-        android:layout_marginTop="5dp"
         android:layout_width="0dp"
         android:layout_height="match_parent"
         android:layout_weight="1"
@@ -97,6 +96,7 @@
         android:orientation="vertical"
         android:id="@+id/id_tab_weixin4">
         <ImageView
+            android:layout_marginTop="10dp"
             android:layout_width="32dp"
             android:layout_gravity="center"
             android:layout_height="32dp"
