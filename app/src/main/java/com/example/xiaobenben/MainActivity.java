@@ -17,6 +17,7 @@ import android.widget.LinearLayout;
 import com.example.xiaobenben.ben.Ben;
 import com.example.xiaobenben.ben.BlankFragment_ben;
 import com.example.xiaobenben.biao.BlankFragment_biao;
+import com.example.xiaobenben.zhong.ClockActivity;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -53,13 +54,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         });
         */
 
+
+
+
         initPager();
         initTabView();
 
 
 
 
-        //tiaozhuan();
     }
 
     public void refreshBenlist(List<Ben> bl) {
@@ -163,6 +166,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     FileCacheUtil fileCacheUtil = new FileCacheUtil();
                     fileCacheUtil.write_benlist(context,benList);
                     //fileCacheUtil.qCloudUpload_benList(context,benList);
+
+                    Intent intent = new Intent( context, ClockActivity.class );
+                    startActivity(intent);
 
                 }
 

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginRight="20dp"
+    android:layout_marginLeft="20dp"
+    android:layout_marginTop="35dp">
+    <TextView
+        android:id="@+id/Cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="退出"
+        android:textColor="#FF9800"
+        android:textSize="15sp"
+        android:layout_alignParentLeft="true"
+        android:onClick="Exit"/>
+    <TextView
+        android:id="@+id/TitleContent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:textSize="17sp"
+        android:layout_centerHorizontal="true"
+        android:text="123456asd3"
+        android:background="#FF00FF"
+        android:onClick="Exit"/>
+    <TextView
+        android:id="@+id/Save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="添加"
+        android:textColor="#FF9800"
+        android:textSize="15sp"
+        android:layout_alignParentRight="true"
+        android:onClick="Add"/>
+
+</RelativeLayout>

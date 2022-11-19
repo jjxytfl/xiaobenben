@@ -16,6 +16,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Xiaobenben">
         <activity
+            android:name=".zhong.ClockActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".biao.biao_NewActivity"
             android:exported="false" />
         <activity
