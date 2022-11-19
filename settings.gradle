@@ -4,6 +4,7 @@ pluginManagement {
         // 增加这行
         mavenCentral()
 
+
     }
 }
 dependencyResolutionManagement {
@@ -11,6 +12,7 @@ dependencyResolutionManagement {
     repositories {
         google()
         mavenCentral()
+        gradlePluginPortal()
 
 
         maven { url 'https://jitpack.io' }
