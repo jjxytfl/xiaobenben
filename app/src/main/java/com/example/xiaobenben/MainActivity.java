@@ -179,7 +179,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     private void changeTab(int position) {
         ivcur.setSelected(false);
-        llcur.setBackgroundColor(0x7f00ff00);
+        llcur.setBackgroundColor(0x3f00ff00);
         switch (position){
             case R.id.id_tab_weixin:
                 viewPager.setCurrentItem(0);
@@ -212,7 +212,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 //tiaozhuan();
                 break;
         }
-        llcur.setBackgroundColor(0xaf00ff00);
+        llcur.setBackgroundColor(0xcf00ff00);
     }
 
     @Override

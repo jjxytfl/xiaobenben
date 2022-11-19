@@ -13,6 +13,7 @@ import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ImageButton;
 import android.widget.ListView;
+import android.widget.TextView;
 
 import com.example.xiaobenben.R;
 import com.example.xiaobenben.biao.DailyTasksBiao.dailyTasksBiao_NewActivity;
@@ -85,7 +86,7 @@ public class BlankFragment_biao extends Fragment {
         });
 
 
-        ImageButton addImgbnt = view.findViewById(R.id.id_biao_add_imgbnt);
+        TextView addImgbnt = view.findViewById(R.id.id_biao_add_imgbnt);
         addImgbnt.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
