@@ -124,7 +124,7 @@ public class ClockActivity extends AppCompatActivity {
     }
     public void Add(View view){
         flag = false;
-        //Intent intent = new Intent( context,AddClockActivity.class );
+        Intent intent = new Intent( context,AddClockActivity.class );
         Bundle bundle = new Bundle(  );
         bundle.putSerializable( "list",(Serializable)clockTimeList );
         intent.putExtras( bundle );
