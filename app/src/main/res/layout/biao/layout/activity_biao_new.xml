@@ -20,7 +20,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="1"
-        android:background="#0F0FFF"
+        android:background="#000F0FFF"
         >
 
         <TextView
@@ -28,9 +28,9 @@
             android:layout_height="46dp"
             android:layout_marginStart="64dp"
             android:layout_marginTop="64dp"
-            android:text="计划表类型"
+            android:text="选择计划表类型"
             android:textSize="26dp"
-            android:background="#0ff000"
+            android:background="#af0ff000"
             />
 
 
@@ -41,7 +41,7 @@
             android:layout_marginStart="256dp"
             android:layout_marginTop="64dp"
 
-            android:background="#0ff000"
+            android:background="#af0ff000"
             android:id="@+id/id_biao_new_spinner"
             />
 
@@ -50,9 +50,9 @@
             android:layout_height="46dp"
             android:layout_marginStart="64dp"
             android:layout_marginTop="128dp"
-            android:text="表名"
+            android:text="输入表名"
             android:textSize="26dp"
-            android:background="#0ff000"
+            android:background="#af0ff000"
             />
 
         <EditText
@@ -65,7 +65,7 @@
             android:inputType="text"
             android:lines="1"
 
-            android:background="#0ff000"
+            android:background="#af0ff000"
             android:id="@+id/id_biao_new_et"
             />
 
@@ -78,13 +78,19 @@
         android:background="#ff0FfF"
         >
 
-        <ImageButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@drawable/tab_weixin"
+
+        <com.example.xiaobenben.control.CircleImageView
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:id="@+id/id_biao_new_sure_imgbnt"
+
             android:layout_marginStart="256dp"
             android:layout_marginTop="8dp"
-            android:id="@+id/id_biao_new_sure_imgbnt"
+
+            android:layout_centerInParent="true"
+            android:scaleType="centerCrop"
+
+            android:src="@drawable/next1"
             />
 
 

@@ -24,6 +24,7 @@ import com.example.xiaobenben.MainActivity;
 import com.example.xiaobenben.R;
 import com.example.xiaobenben.biao.DailyTasksBiao.dailyTasksBiao_NewActivity;
 import com.example.xiaobenben.biao.DailyTasksBiao.dailyTasksBiao_OperateActivity;
+import com.example.xiaobenben.control.CircleImageView;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -80,7 +81,8 @@ public class biao_NewActivity extends AppCompatActivity {
         EditText et = findViewById(R.id.id_biao_new_et);
 
 
-        ImageButton sureimgbnt = findViewById(R.id.id_biao_new_sure_imgbnt);
+        CircleImageView sureimgbnt = findViewById(R.id.id_biao_new_sure_imgbnt);
+
         sureimgbnt.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

@@ -46,14 +46,11 @@ public class ClockActivity extends AppCompatActivity {
             getWindow().setStatusBarColor( Color.TRANSPARENT );
         }
         setContentView( R.layout.activity_clock );
+
         InitView();
         InitSingle();
-        InitRecycler();
-
-
         InitData();
-
-
+        InitRecycler();
     }
     private void InitView(){
         //主
@@ -100,7 +97,6 @@ public class ClockActivity extends AppCompatActivity {
         adapter = new ClockAdapter(  clockTimeList,context );
         mRecyclerView.setAdapter( adapter );
 
-        Log.d("1234", "InitRecycler: " + clockTimeList.size());
 
         //实现侧滑 的玩意 WeSwipe
         WeSwipe.attach( mRecyclerView );
@@ -122,6 +118,12 @@ public class ClockActivity extends AppCompatActivity {
     public void Exit(View view){
         killProcess.finishAll();
     }
+
+    public static void addClock(ClockTime clockTime){
+        clockTimeList.add(clockTime);
+    }
+
+    //xml 设置的监听
     public void Add(View view){
         flag = false;
         Intent intent = new Intent( context,AddClockActivity.class );

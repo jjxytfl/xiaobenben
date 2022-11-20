@@ -124,6 +124,8 @@ public class AddClockActivity extends AppCompatActivity {
         sp.PutData( context, "Hour", mHour );
         sp.PutData( context, "Min", mMin );
         sp.PutData( context, "isSelect", isSelect );
+
+
     }
 
     public void Exit(View view) {
@@ -132,9 +134,10 @@ public class AddClockActivity extends AppCompatActivity {
     }
 
     public void Add(View view) {
-        sp.PutData( context,"access",true );
-        InitTime();
-        StartService();
+        //sp.PutData( context,"access",true );
+        //InitTime();
+        //StartService();
+        ClockActivity.addClock(new ClockTime(String.valueOf(mHour),String.valueOf(mMin),isSelect));
         //ClockWarn();
         ReturnActivity( ClockActivity.class );
     }
