@@ -17,6 +17,7 @@ import android.widget.LinearLayout;
 import com.example.xiaobenben.ben.Ben;
 import com.example.xiaobenben.ben.BlankFragment_ben;
 import com.example.xiaobenben.biao.BlankFragment_biao;
+import com.example.xiaobenben.wo.LoginActivity;
 import com.example.xiaobenben.zhong.ClockActivity;
 
 import java.io.BufferedReader;
@@ -167,7 +168,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     fileCacheUtil.write_benlist(context,benList);
                     //fileCacheUtil.qCloudUpload_benList(context,benList);
 
-                    Intent intent = new Intent( context, ClockActivity.class );
+                    Intent intent = new Intent( context, LoginActivity.class );
                     startActivity(intent);
 
                 }

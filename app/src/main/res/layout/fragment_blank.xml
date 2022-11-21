@@ -20,11 +20,17 @@
         android:textColor="#00ff00"
         android:text="hello_blank_fragment" />
 
-    <ListView
-        android:layout_marginTop="64dp"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="#FF000F"
+    <com.example.xiaobenben.control.TomatoClockView
+        android:layout_width="128dp"
+        android:layout_height="128dp"
+
+        android:paddingBottom="16dp"
+        android:paddingTop="16dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+
+
         />
+
 
 </FrameLayout>
