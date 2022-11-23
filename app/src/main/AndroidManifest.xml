@@ -16,6 +16,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Xiaobenben">
         <activity
+            android:name=".zhong.Tomato.TomatoClockActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".wo.LoginActivity"
             android:exported="false">
             <meta-data

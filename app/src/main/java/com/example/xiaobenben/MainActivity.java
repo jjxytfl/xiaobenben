@@ -19,6 +19,7 @@ import com.example.xiaobenben.ben.BlankFragment_ben;
 import com.example.xiaobenben.biao.BlankFragment_biao;
 import com.example.xiaobenben.wo.LoginActivity;
 import com.example.xiaobenben.zhong.ClockActivity;
+import com.example.xiaobenben.zhong.Tomato.BlankFragment_zhong;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -122,6 +123,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             BlankFragment_ben.context = this;
             BlankFragment_biao.context = this;
             BlankFragment_me.context = this;
+            BlankFragment_zhong.context = this;
         }
 
         ArrayList<Fragment> fragments= new ArrayList<>();
@@ -143,7 +145,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         fragments.add(BlankFragment_ben.newInstance(benList));
         fragments.add(BlankFragment_biao.newInstance("txk","321"));
-        fragments.add(BlankFragment.newInstance("27",2));
+        fragments.add(BlankFragment_zhong.newInstance("27","2"));
         fragments.add(BlankFragment_me.newInstance("67867","me"));
 
         MyFragmentPagerAdapter pagerAdapter = new MyFragmentPagerAdapter(getSupportFragmentManager(), getLifecycle(), fragments);
