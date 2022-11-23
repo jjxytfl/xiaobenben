@@ -12,6 +12,7 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.example.xiaobenben.biao.DailyTasksBiao.dailyTasksBiao_NewActivity;
+import com.example.xiaobenben.wo.LoginActivity;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -78,8 +79,14 @@ public class BlankFragment_me extends Fragment {
     }
 
     private void initView() {
-        TextView tv = root.findViewById(R.id.id_me_tv);
-        tv.setText(mParam1);
+        TextView tv = root.findViewById(R.id.id_wo_dl);
+        tv.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent( context, LoginActivity.class );
+                startActivity(intent);
+            }
+        });
 
 
 //        Intent intent = new Intent(context, dailyTasksBiao_NewActivity.class);

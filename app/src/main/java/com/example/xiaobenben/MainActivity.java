@@ -170,8 +170,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     fileCacheUtil.write_benlist(context,benList);
                     //fileCacheUtil.qCloudUpload_benList(context,benList);
 
-                    Intent intent = new Intent( context, LoginActivity.class );
-                    startActivity(intent);
+
 
                 }
 

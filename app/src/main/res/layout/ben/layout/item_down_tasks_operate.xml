@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="64dp">
+
+    <TextView
+        android:layout_width="128dp"
+        android:layout_height="wrap_content"
+        android:text="任务名"
+        android:textSize="20dp"
+        android:id="@+id/id_biao_downTasks_item_name"
+        />
+
+    <TextView
+        android:layout_width="64dp"
+        android:layout_height="wrap_content"
+        android:text="15"
+        android:id="@+id/id_biao_downTasks_item_surplus"
+        />
+
+    <Button
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:text="消耗"
+        android:id="@+id/id_biao_downTasks_item_bnt"
+        />
+
+
+</LinearLayout>
