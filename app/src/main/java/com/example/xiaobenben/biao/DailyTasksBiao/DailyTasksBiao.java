@@ -12,6 +12,7 @@ public class DailyTasksBiao extends Biao implements Serializable {
 
     public DailyTasksBiao(){
         super();
+        setBiaoType("每日认为计划表");
         dailyTasksItemList = new ArrayList<>();
         dailyTasksItemList.add(new DailyTasksItem("","","",""));
     }

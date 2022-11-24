@@ -11,11 +11,13 @@ public class DownTasksBiao  extends Biao implements Serializable {
 
     public DownTasksBiao(){
         super();
+        setBiaoType("倒数计划表");
         downTasksItemList = new ArrayList<>();
     }
 
     public DownTasksBiao(List<DownTasksItem> downTasksItemList) {
         super();
+        setBiaoType("倒数计划表");
         this.downTasksItemList = downTasksItemList;
     }
 

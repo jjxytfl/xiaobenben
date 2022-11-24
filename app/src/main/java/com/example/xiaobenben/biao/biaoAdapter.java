@@ -49,8 +49,12 @@ public class biaoAdapter extends BaseAdapter {
         }
 
         TextView tv1 = view.findViewById(R.id.id_biao_item_tv1);
-        tv1.setText(biaoList.get(i).getBiaoName());
+        TextView tv2 = view.findViewById(R.id.id_biao_item_tv2);
+        TextView tv3 = view.findViewById(R.id.id_biao_item_tv3);
 
+        tv1.setText(biaoList.get(i).getBiaoName());
+        tv2.setText("类型:"+biaoList.get(i).getBiaoType());
+        tv3.setText("创建时间:"+biaoList.get(i).getNewTime());
 
 
         tv1.setOnClickListener(new View.OnClickListener() {

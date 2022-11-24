@@ -53,7 +53,7 @@ public class downTasks_OperateAdapter extends BaseAdapter {
             @Override
             public void onClick(View view) {
                 downTasksBiao.getDownTasksItemList().get(i).consume();
-                surplus_tv.setText(downTasksBiao.getDownTasksItemList().get(i).getSurplus()-1+"");
+                surplus_tv.setText(downTasksBiao.getDownTasksItemList().get(i).getSurplus()+"");
                 listener.callback_consume(i,true);
             }
         });

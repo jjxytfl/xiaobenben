@@ -26,6 +26,9 @@ public class downTasksBiao_NewActivity extends AppCompatActivity {
         context = this;
 
 
+        String biaoName = getIntent().getStringExtra("biaoName");
+        downTasksBiao.setBiaoName(biaoName);
+
         ListView lv = findViewById(R.id.id_biao_downTasks_new_lv);
 
         lv.setAdapter(new downTasksAdapter(context, downTasksBiao, listener = new downTasksAdapter.downNewClickListener() {

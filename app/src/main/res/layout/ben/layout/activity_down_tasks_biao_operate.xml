@@ -12,6 +12,19 @@
         android:layout_height="64dp"
         android:orientation="vertical"
         >
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="返回"
+            android:id="@+id/id_biao_downTasks_operate_preassed_bnt"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="完成"
+            android:id="@+id/id_biao_downTasks_operate_sure_bnt"
+            />
 
     </LinearLayout>
 

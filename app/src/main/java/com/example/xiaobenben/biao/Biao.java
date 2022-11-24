@@ -25,6 +25,10 @@ public class Biao implements Serializable {
         this.biaoType = biaoType;
     }
 
+    public void setBiaoType(String biaoType) {
+        this.biaoType = biaoType;
+    }
+
     public String getBiaoType() {
         return biaoType;
     }

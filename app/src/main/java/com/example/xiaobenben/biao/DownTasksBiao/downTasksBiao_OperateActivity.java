@@ -5,9 +5,12 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Context;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ListView;
 
 import com.example.xiaobenben.R;
+import com.example.xiaobenben.biao.BlankFragment_biao;
+import com.example.xiaobenben.biao.DailyTasksBiao.DailyTasksBiao;
 
 public class downTasksBiao_OperateActivity extends AppCompatActivity {
 
@@ -23,11 +26,17 @@ public class downTasksBiao_OperateActivity extends AppCompatActivity {
         setContentView(R.layout.activity_down_tasks_biao_operate);
 
         context = this;
-        downTasksBiao = new DownTasksBiao();
-        downTasksBiao.addDownTasksItem("吸烟",10);
-        downTasksBiao.addDownTasksItem("喝酒",15);
-        downTasksBiao.addDownTasksItem("ck",12);
-        downTasksBiao.addDownTasksItem("pc",10);
+//        downTasksBiao = new DownTasksBiao();
+//        downTasksBiao.addDownTasksItem("吸烟",10);
+//        downTasksBiao.addDownTasksItem("喝酒",15);
+//        downTasksBiao.addDownTasksItem("ck",12);
+//        downTasksBiao.addDownTasksItem("pc",10);
+
+        int biaoid;
+        {
+            biaoid = getIntent().getIntExtra("biaoid",0);
+            downTasksBiao = (DownTasksBiao) getIntent().getSerializableExtra("biao");
+        }
 
 
 
@@ -45,5 +54,27 @@ public class downTasksBiao_OperateActivity extends AppCompatActivity {
         }));
 
 
+        Button pressed_bnt = findViewById(R.id.id_biao_downTasks_operate_preassed_bnt);
+        pressed_bnt.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                BlankFragment_biao.modify(biaoid,downTasksBiao);
+                onBackPressed();
+            }
+        });
+
+
+
+
+        Button sure_bnt = findViewById(R.id.id_biao_downTasks_operate_preassed_bnt);
+        sure_bnt.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                BlankFragment_biao.modify(biaoid,downTasksBiao);
+                onBackPressed();
+            }
+        });
+
     }
+
 }
