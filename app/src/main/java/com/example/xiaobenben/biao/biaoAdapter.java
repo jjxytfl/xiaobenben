@@ -13,6 +13,7 @@ import android.widget.TextView;
 import com.example.xiaobenben.R;
 import com.example.xiaobenben.ben.ben_ChangeActivity;
 import com.example.xiaobenben.biao.DailyTasksBiao.dailyTasksBiao_OperateActivity;
+import com.example.xiaobenben.biao.DownTasksBiao.downTasksBiao_OperateActivity;
 
 import java.util.List;
 
@@ -56,13 +57,20 @@ public class biaoAdapter extends BaseAdapter {
             @Override
             public void onClick(View view) {
                 //根据 表类型的不同 跳转到不同的activity设计不同的
-                {
+                if(biaoList.get(i).getBiaoType().equals("每日任务计划表")){
 
                     Intent intent = new Intent(context, dailyTasksBiao_OperateActivity.class);
                     intent.putExtra("biao", biaoList.get(i));
                     intent.putExtra("biaoid", i);
 
                     ((Activity)context).startActivity(intent);
+                }else{
+                    Intent intent = new Intent(context, downTasksBiao_OperateActivity.class);
+                    intent.putExtra("biao", biaoList.get(i));
+                    intent.putExtra("biaoid", i);
+
+                    ((Activity)context).startActivity(intent);
+
                 }
 
             }

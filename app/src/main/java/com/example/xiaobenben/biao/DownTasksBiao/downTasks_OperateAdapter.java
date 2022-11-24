@@ -5,6 +5,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+import android.widget.Button;
+import android.widget.TextView;
 
 import com.example.xiaobenben.R;
 
@@ -40,6 +42,21 @@ public class downTasks_OperateAdapter extends BaseAdapter {
             view = LayoutInflater.from(context).inflate(R.layout.item_down_tasks_operate, viewGroup, false);
         }
 
+        TextView name_tv = view.findViewById(R.id.id_biao_downTasks_item_name);
+        TextView surplus_tv = view.findViewById(R.id.id_biao_downTasks_item_surplus);
+        Button bnt = view.findViewById(R.id.id_biao_downTasks_item_bnt);
+
+
+        name_tv.setText(downTasksBiao.getDownTasksItemList().get(i).getName());
+        surplus_tv.setText(downTasksBiao.getDownTasksItemList().get(i).getSurplus()+"");
+        bnt.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                downTasksBiao.getDownTasksItemList().get(i).consume();
+                surplus_tv.setText(downTasksBiao.getDownTasksItemList().get(i).getSurplus()-1+"");
+                listener.callback_consume(i,true);
+            }
+        });
 
 
         return view;
@@ -47,7 +64,7 @@ public class downTasks_OperateAdapter extends BaseAdapter {
 
 
     public static interface downOperateClickListener{
-        public void callback_Completion(int i,boolean completion);  //自行配置参数  需要传递到activity的值
+        public void callback_consume(int i,boolean completion);  //自行配置参数  需要传递到activity的值
         public void callback_Remarks(int i,String remark);
     }
 

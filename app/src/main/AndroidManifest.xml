@@ -16,14 +16,14 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Xiaobenben">
         <activity
-            android:name=".downTasksBiao_OperateActivity"
+            android:name=".biao.DownTasksBiao.downTasksBiao_OperateActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".downTasksBiao_NewActivity"
+            android:name=".biao.DownTasksBiao.downTasksBiao_NewActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"

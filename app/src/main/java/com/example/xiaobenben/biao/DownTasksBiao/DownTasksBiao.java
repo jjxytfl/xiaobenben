@@ -24,6 +24,16 @@ public class DownTasksBiao  extends Biao implements Serializable {
         downTasksItemList.add(new DownTasksItem(name,surplus));
     }
 
+    public void addDownTasksItem(){
+        downTasksItemList.add(new DownTasksItem());
+    }
+
+    public void deleteDownTasksItem(int i){
+        downTasksItemList.remove(i);
+    }
+
+
+
     public List<DownTasksItem> getDownTasksItemList() {
         return downTasksItemList;
     }
@@ -42,6 +52,11 @@ public class DownTasksBiao  extends Biao implements Serializable {
         public DownTasksItem(String name, int surplus) {
             this.name = name;
             this.surplus = surplus;
+        }
+
+        public DownTasksItem() {
+            this.name = "name";
+            this.surplus = 0;
         }
 
         public String getName() {

@@ -24,6 +24,7 @@ import com.example.xiaobenben.MainActivity;
 import com.example.xiaobenben.R;
 import com.example.xiaobenben.biao.DailyTasksBiao.dailyTasksBiao_NewActivity;
 import com.example.xiaobenben.biao.DailyTasksBiao.dailyTasksBiao_OperateActivity;
+import com.example.xiaobenben.biao.DownTasksBiao.downTasksBiao_NewActivity;
 import com.example.xiaobenben.control.CircleImageView;
 
 import java.util.ArrayList;
@@ -93,7 +94,11 @@ public class biao_NewActivity extends AppCompatActivity {
                     ((Activity)context).startActivity(intent);
                     finish();
                 }else{
-                    Toast.makeText(biao_NewActivity.this,"不存在该计划表",Toast.LENGTH_SHORT).show();
+                    Intent intent = new Intent(context, downTasksBiao_NewActivity.class);
+                    intent.putExtra("biaoName", et.getText().toString());
+
+                    ((Activity)context).startActivity(intent);
+                    finish();
                 }
 
 
