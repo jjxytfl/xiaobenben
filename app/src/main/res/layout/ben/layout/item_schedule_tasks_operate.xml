@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:layout_height="64dp">
+
+
+    <TextView
+        android:layout_width="128dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="16dp"
+        android:text="第三次会议"
+        android:id="@+id/id_biao_scheduleTasks_operate_item_task"
+
+        />
+    <TextView
+        android:layout_width="128dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="16dp"
+        android:text="2022-08-20"
+        android:id="@+id/id_biao_scheduleTasks_operate_item_date"
+        />
+
+    <Button
+        android:layout_width="64dp"
+        android:layout_height="wrap_content"
+        android:text="延期"
+        android:id="@+id/id_biao_scheduleTasks_operate_item_delay"
+        />
+
+    <Button
+        android:layout_marginStart="20dp"
+        android:layout_width="64dp"
+        android:layout_height="wrap_content"
+        android:text="完成"
+        android:id="@+id/id_biao_scheduleTasks_operate_item_sure"
+        />
+
+
+
+</LinearLayout>

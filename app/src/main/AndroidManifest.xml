@@ -16,6 +16,27 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Xiaobenben">
         <activity
+            android:name=".scheduleTasksBiao_HistoryActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".scheduleTasksBiao_NewActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".scheduleTasksBiao_OperateActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".biao.DownTasksBiao.downTasksBiao_OperateActivity"
             android:exported="false">
             <meta-data
