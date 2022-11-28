@@ -14,6 +14,8 @@ import com.example.xiaobenben.R;
 import com.example.xiaobenben.ben.ben_ChangeActivity;
 import com.example.xiaobenben.biao.DailyTasksBiao.dailyTasksBiao_OperateActivity;
 import com.example.xiaobenben.biao.DownTasksBiao.downTasksBiao_OperateActivity;
+import com.example.xiaobenben.biao.ScheduleTasksBiao.scheduleTasksBiao_NewActivity;
+import com.example.xiaobenben.biao.ScheduleTasksBiao.scheduleTasksBiao_OperateActivity;
 
 import java.util.List;
 
@@ -68,8 +70,15 @@ public class biaoAdapter extends BaseAdapter {
                     intent.putExtra("biaoid", i);
 
                     ((Activity)context).startActivity(intent);
-                }else{
+                }else if(biaoList.get(i).getBiaoType().equals("倒数计划表")){
                     Intent intent = new Intent(context, downTasksBiao_OperateActivity.class);
+                    intent.putExtra("biao", biaoList.get(i));
+                    intent.putExtra("biaoid", i);
+
+                    ((Activity)context).startActivity(intent);
+
+                }else if(biaoList.get(i).getBiaoType().equals("日程计划表")){
+                    Intent intent = new Intent(context, scheduleTasksBiao_OperateActivity.class);
                     intent.putExtra("biao", biaoList.get(i));
                     intent.putExtra("biaoid", i);
 

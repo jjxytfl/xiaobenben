@@ -16,21 +16,21 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Xiaobenben">
         <activity
-            android:name=".scheduleTasksBiao_HistoryActivity"
+            android:name=".biao.ScheduleTasksBiao.scheduleTasksBiao_HistoryActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".scheduleTasksBiao_NewActivity"
+            android:name=".biao.ScheduleTasksBiao.scheduleTasksBiao_NewActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".scheduleTasksBiao_OperateActivity"
+            android:name=".biao.ScheduleTasksBiao.scheduleTasksBiao_OperateActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
