@@ -7,12 +7,13 @@
     android:orientation="vertical"
     tools:context=".biao.DownTasksBiao.downTasksBiao_OperateActivity">
 
-    <LinearLayout
+    <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="64dp"
         android:orientation="vertical"
         >
         <Button
+            android:layout_gravity="left"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="返回"
@@ -20,13 +21,14 @@
             />
 
         <Button
+            android:layout_gravity="right"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="完成"
             android:id="@+id/id_biao_downTasks_operate_sure_bnt"
             />
 
-    </LinearLayout>
+    </FrameLayout>
 
 
     <LinearLayout

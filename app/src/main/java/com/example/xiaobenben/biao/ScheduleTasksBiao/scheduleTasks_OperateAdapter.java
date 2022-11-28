@@ -46,25 +46,21 @@ public class scheduleTasks_OperateAdapter extends BaseAdapter {
         TextView task_tv = view.findViewById(R.id.id_biao_scheduleTasks_operate_item_task);
         TextView date_tv = view.findViewById(R.id.id_biao_scheduleTasks_operate_item_date);
 
-        Button delay_bnt = view.findViewById(R.id.id_biao_scheduleTasks_operate_item_delay);
         Button sure_bnt = view.findViewById(R.id.id_biao_scheduleTasks_operate_item_sure);
 
         task_tv.setText(scheduleTasksBiao.getScheduleTasksInComItems().get(i).task);
         //不太规范
         date_tv.setText(scheduleTasksBiao.getScheduleTasksInComItems().get(i).date+scheduleTasksBiao.getScheduleTasksInComItems().get(i).time);
 
-        delay_bnt.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                //延期
-            }
-        });
+
 
 
         sure_bnt.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 //确定
+                scheduleTasksBiao.addScheduleTasksComItem(i,"06-06","00:00");
+                notifyDataSetChanged();
             }
         });
 

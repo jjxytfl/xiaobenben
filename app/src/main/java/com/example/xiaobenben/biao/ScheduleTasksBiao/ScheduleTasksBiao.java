@@ -17,8 +17,12 @@ public class ScheduleTasksBiao extends Biao {
         scheduleTasksInComItems = new ArrayList<>();
     }
 
-    public void deldeScheduleTasksInComItem(int i){
+    public void deleteScheduleTasksInComItem(int i){
         scheduleTasksInComItems.remove(i);
+    }
+
+    public void modifyScheduleTasksInComItem(int i,String date,String time,String task){
+        scheduleTasksInComItems.set(i,new ScheduleTasksInComItem(date, time, task));
     }
 
 

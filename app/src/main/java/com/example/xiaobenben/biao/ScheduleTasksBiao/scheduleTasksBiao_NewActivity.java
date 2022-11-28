@@ -9,15 +9,19 @@ import android.app.Dialog;
 import android.app.TimePickerDialog;
 import android.content.Context;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.TimePicker;
+import android.widget.Toast;
 
 import com.example.xiaobenben.R;
+import com.example.xiaobenben.biao.BlankFragment_biao;
 
 import java.util.Calendar;
 import java.util.Locale;
@@ -37,6 +41,13 @@ public class scheduleTasksBiao_NewActivity extends AppCompatActivity{
         context = this;
         scheduleTasksBiao = new ScheduleTasksBiao();
 
+        String biaoName = getIntent().getStringExtra("biaoName");
+        scheduleTasksBiao.setBiaoName(biaoName);
+
+
+
+
+
         Button bnt = findViewById(R.id.id_biao_scheduleTasks_new_add);
         bnt.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -50,10 +61,42 @@ public class scheduleTasksBiao_NewActivity extends AppCompatActivity{
         lv.setAdapter(new scheduleTasksAdapter(context, scheduleTasksBiao, listener = new scheduleTasksAdapter.scheduleNewClickListener() {
             @Override
             public void callback_del(int i) {
-                scheduleTasksBiao.deldeScheduleTasksInComItem(i);
+                scheduleTasksBiao.deleteScheduleTasksInComItem(i);
                 notify_biao();
             }
         }));
+
+
+        lv.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
+            @Override
+            public boolean onItemLongClick(AdapterView<?> adapterView, View view, int i, long l) {
+                Log.d("123456", "  n e w   onItemLongClick:  ++ + +++ +" );
+                Toast.makeText(context, "长按了", Toast.LENGTH_SHORT).show();
+                return true;
+            }
+        });
+
+
+
+        Button sure_bnt = findViewById(R.id.id_biao_scheduleTasks_new_sure);
+        sure_bnt.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                BlankFragment_biao.addBiao(scheduleTasksBiao);
+                finish();
+            }
+        });
+
+
+
+
+        Button back_bnt = findViewById(R.id.id_biao_scheduleTasks_new_back);
+        back_bnt.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                onBackPressed();
+            }
+        });
 
 
 
@@ -145,7 +188,7 @@ public class scheduleTasksBiao_NewActivity extends AppCompatActivity{
             @Override
             public void onDateSet(DatePicker view, int year, int monthOfYear, int dayOfMonth) {
                 // 此处得到选择的时间，可以进行你想要的操作
-                tv.setText("：" + year + "年" + (monthOfYear + 1) + "月" + dayOfMonth + "日");
+                tv.setText(year + "-" + (monthOfYear + 1) + "-" + dayOfMonth);
             }
         }
                 // 设置初始日期
@@ -170,7 +213,7 @@ public class scheduleTasksBiao_NewActivity extends AppCompatActivity{
                 new TimePickerDialog.OnTimeSetListener() {
                     @Override
                     public void onTimeSet(TimePicker view, int hourOfDay, int minute) {
-                        tv.setText(hourOfDay + "时" + minute  + "分");
+                        tv.setText(hourOfDay + ":" + minute );
                     }
                 }
                 // 设置初始时间

@@ -2,6 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:orientation="horizontal"
+    android:descendantFocusability="blocksDescendants"
     android:layout_height="64dp">
 
 
@@ -23,12 +24,6 @@
         android:id="@+id/id_biao_scheduleTasks_operate_item_date"
         />
 
-    <Button
-        android:layout_width="64dp"
-        android:layout_height="wrap_content"
-        android:text="延期"
-        android:id="@+id/id_biao_scheduleTasks_operate_item_delay"
-        />
 
     <Button
         android:layout_marginStart="20dp"
