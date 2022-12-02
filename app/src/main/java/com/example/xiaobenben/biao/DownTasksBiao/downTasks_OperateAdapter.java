@@ -52,7 +52,8 @@ public class downTasks_OperateAdapter extends BaseAdapter {
         bnt.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                downTasksBiao.getDownTasksItemList().get(i).consume();
+                downTasksBiao.getDownTasksItemList().get(i).consume(name_tv.getText().toString(),"time");
+                downTasksBiao.addHistoryDownTasksItem(name_tv.getText().toString(),"time");
                 surplus_tv.setText(downTasksBiao.getDownTasksItemList().get(i).getSurplus()+"");
                 listener.callback_consume(i,true);
             }

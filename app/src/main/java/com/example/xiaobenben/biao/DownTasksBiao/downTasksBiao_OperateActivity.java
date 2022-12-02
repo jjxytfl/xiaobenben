@@ -66,7 +66,7 @@ public class downTasksBiao_OperateActivity extends AppCompatActivity {
 
 
 
-        Button sure_bnt = findViewById(R.id.id_biao_downTasks_operate_preassed_bnt);
+        Button sure_bnt = findViewById(R.id.id_biao_downTasks_operate_sure_bnt);
         sure_bnt.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

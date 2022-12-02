@@ -9,6 +9,10 @@ public class biaoTime implements Serializable {
     private int hour;
     private int minute;
 
+    public biaoTime(){
+
+    }
+
     public biaoTime(int year, int month, int day, int hour, int minute) {
         this.year = year;
         this.month = month;
