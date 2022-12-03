@@ -26,6 +26,7 @@ import com.example.xiaobenben.biao.DailyTasksBiao.dailyTasksBiao_NewActivity;
 import com.example.xiaobenben.biao.DailyTasksBiao.dailyTasksBiao_OperateActivity;
 import com.example.xiaobenben.biao.DownTasksBiao.downTasksBiao_NewActivity;
 import com.example.xiaobenben.biao.ScheduleTasksBiao.scheduleTasksBiao_NewActivity;
+import com.example.xiaobenben.biao.TourTasksBiao.tourTasksBiao_NewActivity;
 import com.example.xiaobenben.control.CircleImageView;
 
 import java.util.ArrayList;
@@ -106,6 +107,15 @@ public class biao_NewActivity extends AppCompatActivity {
 
                     ((Activity)context).startActivity(intent);
                     finish();
+                }else{
+                    Intent intent = new Intent(context, tourTasksBiao_NewActivity.class);
+                    intent.putExtra("biaoName", et.getText().toString());
+
+                    ((Activity)context).startActivity(intent);
+                    finish();
+
+
+
                 }
 
 

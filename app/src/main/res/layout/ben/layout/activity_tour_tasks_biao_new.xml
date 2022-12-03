@@ -4,10 +4,38 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".biao.TourTasksBiao.tourTasksBiao_NewActivity">
 
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        >
 
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="添加"
+            android:id="@+id/id_biao_tourTasks_new_add"
+            />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/id_biao_tourTasks_new_lv"
+            />
+
+
+
+    </LinearLayout>
 
 
 </LinearLayout>

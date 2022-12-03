@@ -16,21 +16,21 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Xiaobenben">
         <activity
-            android:name=".tourTasksBiao_HistoryActivity"
+            android:name=".biao.TourTasksBiao.tourTasksBiao_HistoryActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".tourTasksBiao_OperateActivity"
+            android:name=".biao.TourTasksBiao.tourTasksBiao_OperateActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".tourTasksBiao_NewActivity"
+            android:name=".biao.TourTasksBiao.tourTasksBiao_NewActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"

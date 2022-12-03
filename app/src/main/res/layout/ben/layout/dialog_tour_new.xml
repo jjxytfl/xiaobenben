@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="256dp"
+    android:layout_height="512dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="128dp"
+            android:layout_height="match_parent"
+            android:gravity="center|right"
+            android:text="预计地点："
+            android:textSize="20dp"
+            />
+        <EditText
+            android:layout_width="128dp"
+            android:layout_height="match_parent"
+            android:gravity="center|left"
+            android:hint="12"
+            android:textSize="20dp"
+            android:id="@+id/id_biao_tourTasks_new_dialog_places"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="128dp"
+            android:layout_height="match_parent"
+            android:gravity="center|right"
+            android:text="预计日期："
+            android:textSize="20dp"
+            />
+        <EditText
+            android:layout_width="128dp"
+            android:layout_height="match_parent"
+            android:gravity="center|left"
+            android:hint="rq"
+            android:textSize="20dp"
+            android:id="@+id/id_biao_tourTasks_new_dialog_date"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="128dp"
+            android:layout_height="match_parent"
+            android:gravity="center|right"
+            android:text="准备物品："
+            android:textSize="20dp"
+            />
+        <EditText
+            android:layout_width="128dp"
+            android:layout_height="match_parent"
+            android:gravity="center|left"
+            android:hint="mm"
+            android:textSize="20dp"
+            android:id="@+id/id_biao_tourTasks_new_dialog_prepare"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="128dp"
+            android:layout_height="match_parent"
+            android:gravity="center|right"
+            android:text="注意事项："
+            android:textSize="20dp"
+            />
+        <EditText
+            android:layout_width="128dp"
+            android:layout_height="match_parent"
+            android:gravity="center|left"
+            android:hint="cc"
+            android:textSize="20dp"
+            android:id="@+id/id_biao_tourTasks_new_dialog_notes"
+            />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="128dp"
+            android:layout_height="match_parent"
+            android:gravity="center|right"
+            android:text="预计花费："
+            android:textSize="20dp"
+            />
+        <EditText
+            android:layout_width="128dp"
+            android:layout_height="match_parent"
+            android:gravity="center|left"
+            android:hint="12"
+            android:textSize="20dp"
+            android:id="@+id/id_biao_tourTasks_new_dialog_expenses"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="128dp"
+            android:layout_height="match_parent"
+            android:gravity="center|right"
+            android:text="详情："
+            android:textSize="20dp"
+            />
+        <EditText
+            android:layout_width="128dp"
+            android:layout_height="match_parent"
+            android:gravity="center|left"
+            android:hint="12"
+            android:textSize="20dp"
+            android:id="@+id/id_biao_tourTasks_new_dialog_details"
+            />
+
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        >
+        <Button
+            android:layout_gravity="left|center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/id_biao_tourTasks_dialog_new_cancel"
+            android:text="取消"
+            />
+
+        <Button
+            android:layout_gravity="right|center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/id_biao_tourTasks_dialog_new_sure"
+            android:text="确定"
+            />
+
+
+    </FrameLayout>
+
+
+
+</LinearLayout>

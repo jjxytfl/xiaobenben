@@ -18,8 +18,17 @@ public class TourTasksBiao extends Biao {
         setBiaoType("旅游计划表");
     }
 
+    public List<TourTasksComItem> getTourTasksComItems() {
+        return tourTasksComItems;
+    }
 
+    public List<tourTasksInComItem> getTourTasksInComItems() {
+        return tourTasksInComItems;
+    }
 
+    public void addTourTasksComItem(String places, String date, String prepare, String notes, String expenses, String details){
+        tourTasksInComItems.add(new tourTasksInComItem(places,date,prepare,notes,expenses,details));
+    }
 
 
     static class TourTasksComItem  implements Serializable{
@@ -56,6 +65,30 @@ public class TourTasksBiao extends Biao {
             this.notes = notes;
             this.expenses = expenses;
             this.details = details;
+        }
+
+        public String getPlaces() {
+            return places;
+        }
+
+        public String getDate() {
+            return date;
+        }
+
+        public String getPrepare() {
+            return prepare;
+        }
+
+        public String getNotes() {
+            return notes;
+        }
+
+        public String getExpenses() {
+            return expenses;
+        }
+
+        public String getDetails() {
+            return details;
         }
     }
 }

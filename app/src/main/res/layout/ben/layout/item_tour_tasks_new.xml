@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="300dp">
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="128dp"
+            android:layout_height="match_parent"
+            android:gravity="center|right"
+            android:text="预计地点："
+            android:textSize="20dp"
+            />
+        <TextView
+            android:layout_width="128dp"
+            android:layout_height="match_parent"
+            android:gravity="center|left"
+            android:text="桂林"
+            android:textSize="20dp"
+            android:id="@+id/id_biao_tourTasks_new_item_places"
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="128dp"
+            android:layout_height="match_parent"
+            android:gravity="center|right"
+            android:text="预计日期："
+            android:textSize="20dp"
+            />
+        <TextView
+            android:layout_width="128dp"
+            android:layout_height="match_parent"
+            android:gravity="center|left"
+            android:text="10-12"
+            android:textSize="20dp"
+            android:id="@+id/id_biao_tourTasks_new_item_date"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="128dp"
+            android:layout_height="match_parent"
+            android:gravity="center|right"
+            android:text="预计花费："
+            android:textSize="20dp"
+            />
+        <TextView
+            android:layout_width="128dp"
+            android:layout_height="match_parent"
+            android:gravity="center|left"
+            android:text="一千三百"
+            android:textSize="20dp"
+            android:id="@+id/id_biao_tourTasks_new_item_expenses"
+            />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:orientation="horizontal"
+        >
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="详情"
+            android:id="@+id/id_biao_tourTasks_new_item_detail_bnt"
+            />
+
+        <Button
+            android:layout_marginStart="128dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="详情"
+            android:id="@+id/id_biao_tourTasks_new_item_del_bnt"
+            />
+
+
+    </LinearLayout>
+
+
+
+
+
+
+</LinearLayout>
