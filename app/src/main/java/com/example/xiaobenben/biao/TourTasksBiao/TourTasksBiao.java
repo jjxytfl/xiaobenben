@@ -26,22 +26,32 @@ public class TourTasksBiao extends Biao {
         return tourTasksInComItems;
     }
 
+    public void comTourTasksItem(int i){
+        tourTasksInComItem item = tourTasksInComItems.remove(i);
+        tourTasksComItems.add(new TourTasksComItem(item,new biaoTime()));
+    }
+
+
     public void addTourTasksComItem(String places, String date, String prepare, String notes, String expenses, String details){
         tourTasksInComItems.add(new tourTasksInComItem(places,date,prepare,notes,expenses,details));
+    }
+
+    public void modTourTasksComItem(int i,String places, String date, String prepare, String notes, String expenses, String details){
+        tourTasksInComItems.set(i,new tourTasksInComItem(places,date,prepare,notes,expenses,details));
     }
 
 
     static class TourTasksComItem  implements Serializable{
         private tourTasksInComItem inComItem;
-        private biaoTime tiem;
+        private biaoTime time;
 
         public TourTasksComItem(){
 
         }
 
-        public TourTasksComItem(tourTasksInComItem inComItem, biaoTime tiem) {
+        public TourTasksComItem(tourTasksInComItem inComItem, biaoTime time) {
             this.inComItem = inComItem;
-            this.tiem = tiem;
+            this.time = time;
         }
     }
 

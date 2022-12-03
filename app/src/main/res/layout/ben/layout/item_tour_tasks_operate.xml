@@ -22,7 +22,7 @@
             android:gravity="center|left"
             android:text="桂林"
             android:textSize="20dp"
-            android:id="@+id/id_biao_tourTasks_new_item_places"
+            android:id="@+id/id_biao_tourTasks_operate_item_places"
             />
 
 
@@ -46,7 +46,7 @@
             android:gravity="center|left"
             android:text="10-12"
             android:textSize="20dp"
-            android:id="@+id/id_biao_tourTasks_new_item_date"
+            android:id="@+id/id_biao_tourTasks_operate_item_date"
             />
 
     </LinearLayout>
@@ -69,7 +69,7 @@
             android:gravity="center|left"
             android:text="一千三百"
             android:textSize="20dp"
-            android:id="@+id/id_biao_tourTasks_new_item_expenses"
+            android:id="@+id/id_biao_tourTasks_operate_item_expenses"
             />
 
     </LinearLayout>
@@ -86,7 +86,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:text="详情"
-            android:id="@+id/id_biao_tourTasks_new_item_detail_bnt"
+            android:id="@+id/id_biao_tourTasks_operate_item_detail_bnt"
             />
 
         <Button
@@ -94,8 +94,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="删除"
-            android:id="@+id/id_biao_tourTasks_new_item_del_bnt"
+            android:text="完成"
+            android:id="@+id/id_biao_tourTasks_operate_item_com_bnt"
             />
 
 

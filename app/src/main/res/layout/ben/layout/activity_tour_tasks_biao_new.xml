@@ -20,6 +20,13 @@
             android:id="@+id/id_biao_tourTasks_new_add"
             />
 
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="完成"
+            android:id="@+id/id_biao_tourTasks_new_sure"
+            />
+
     </LinearLayout>
 
 

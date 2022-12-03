@@ -57,7 +57,7 @@ public class tourTasksAdapter   extends BaseAdapter {
         detail_bnt.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                listener.callback_mod(i);
             }
         });
 
