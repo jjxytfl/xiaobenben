@@ -8,6 +8,7 @@ import android.app.DatePickerDialog;
 import android.app.Dialog;
 import android.app.TimePickerDialog;
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -23,6 +24,7 @@ import android.widget.Toast;
 import com.example.xiaobenben.R;
 import com.example.xiaobenben.biao.BlankFragment_biao;
 import com.example.xiaobenben.biao.DownTasksBiao.DownTasksBiao;
+import com.example.xiaobenben.biao.DownTasksBiao.downTasksBiao_HistoryActivity;
 
 import java.util.Calendar;
 import java.util.Locale;
@@ -48,6 +50,19 @@ public class scheduleTasksBiao_OperateActivity extends AppCompatActivity {
             biaoid = getIntent().getIntExtra("biaoid",0);
             scheduleTasksBiao = (ScheduleTasksBiao) getIntent().getSerializableExtra("biao");
         }
+
+
+        TextView history_tv = findViewById(R.id.id_biao_scheduleTasks_operate_history);
+        history_tv.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(context, scheduleTasksBiao_HistoryActivity.class);
+                intent.putExtra("biao", scheduleTasksBiao);
+                intent.putExtra("biaoid", biaoid);
+
+                ((Activity)context).startActivity(intent);
+            }
+        });
 
 
         lv = findViewById(R.id.id_biao_scheduleTasks_lv);
@@ -104,7 +119,7 @@ public class scheduleTasksBiao_OperateActivity extends AppCompatActivity {
 
 
     public void notify_biao(){
-        lv.setAdapter(new scheduleTasks_OperateAdapter(context,scheduleTasksBiao,listener));
+        //lv.setAdapter(new scheduleTasks_OperateAdapter(context,scheduleTasksBiao,listener));
     }
 
 

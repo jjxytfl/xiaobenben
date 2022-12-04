@@ -43,6 +43,9 @@ public class DownTasksBiao  extends Biao implements Serializable {
     }
 
 
+    public List<HistoryDownTasksItem> getHistoryDownTasksItemList() {
+        return historyDownTasksItemList;
+    }
 
     public List<DownTasksItem> getDownTasksItemList() {
         return downTasksItemList;
@@ -59,6 +62,13 @@ public class DownTasksBiao  extends Biao implements Serializable {
             this.name = name;
         }
 
+        public com.example.xiaobenben.biao.biaoTime getBiaoTime() {
+            return biaoTime;
+        }
+
+        public String getName() {
+            return name;
+        }
 
         public void setBiaoTime(com.example.xiaobenben.biao.biaoTime biaoTime) {
             this.biaoTime = biaoTime;

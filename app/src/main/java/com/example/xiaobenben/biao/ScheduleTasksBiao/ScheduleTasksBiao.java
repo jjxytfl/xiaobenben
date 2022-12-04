@@ -59,6 +59,14 @@ public class ScheduleTasksBiao extends Biao {
         public String time;
         public String task;
 
+        public String getDate(){
+            return "2001-06-02";
+        }
+
+        public String getTask() {
+            return task;
+        }
+
         public ScheduleTasksComItem(String comDate, String comTime, String date, String time, String task) {
             ComDate = comDate;
             ComTime = comTime;

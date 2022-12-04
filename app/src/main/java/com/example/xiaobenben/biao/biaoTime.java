@@ -32,6 +32,15 @@ public class biaoTime implements Serializable {
         this.day = d;
     }
 
+    public String getDate(){
+        return "2001-06-06";
+    }
+
+    public String getTime(){
+        return "10:06";
+    }
+
+
     public void setYear(int year) {
         this.year = year;
     }

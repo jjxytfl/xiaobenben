@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:layout_height="64dp">
+
+    <TextView
+        android:layout_gravity="center"
+        android:layout_marginStart="32dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="你在2002-01-02"
+        android:id="@+id/id_biao_scheduleTasks_history_item_time"
+        android:textSize="20dp"
+        />
+
+    <TextView
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="完成了”小波波“日程"
+        android:id="@+id/id_biao_scheduleTasks_history_item_name"
+        android:textSize="20dp"
+        />
+
+
+
+</LinearLayout>
