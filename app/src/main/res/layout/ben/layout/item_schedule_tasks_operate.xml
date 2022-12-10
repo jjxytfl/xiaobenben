@@ -7,7 +7,8 @@
 
 
     <TextView
-        android:layout_width="128dp"
+        android:layout_marginStart="32dp"
+        android:layout_width="100dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:textSize="16dp"
@@ -27,9 +28,10 @@
 
     <Button
         android:layout_marginStart="20dp"
-        android:layout_width="64dp"
+        android:layout_gravity="center"
+        android:layout_width="100dp"
         android:layout_height="wrap_content"
-        android:text="完成"
+        android:text="完成日程"
         android:id="@+id/id_biao_scheduleTasks_operate_item_sure"
         />
 

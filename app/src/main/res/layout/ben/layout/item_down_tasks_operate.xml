@@ -4,6 +4,8 @@
     android:layout_height="64dp">
 
     <TextView
+        android:layout_gravity="center"
+        android:layout_marginStart="32dp"
         android:layout_width="128dp"
         android:layout_height="wrap_content"
         android:text="任务名"
@@ -12,6 +14,7 @@
         />
 
     <TextView
+        android:layout_gravity="center"
         android:layout_width="64dp"
         android:layout_height="wrap_content"
         android:text="15"
@@ -19,9 +22,11 @@
         />
 
     <Button
-        android:layout_width="64dp"
-        android:layout_height="64dp"
-        android:text="消耗"
+        android:layout_gravity="center"
+        android:layout_marginStart="50dp"
+        android:layout_width="100dp"
+        android:layout_height="45dp"
+        android:text="消耗一次"
         android:id="@+id/id_biao_downTasks_item_bnt"
         />
 

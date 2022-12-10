@@ -15,6 +15,7 @@ import com.example.xiaobenben.R;
 import com.example.xiaobenben.biao.BlankFragment_biao;
 import com.example.xiaobenben.biao.DailyTasksBiao.DailyTasksBiao;
 import com.example.xiaobenben.biao.TourTasksBiao.tourTasksBiao_OperateActivity;
+import com.example.xiaobenben.control.CircleImageView;
 
 public class downTasksBiao_OperateActivity extends AppCompatActivity {
 
@@ -43,7 +44,7 @@ public class downTasksBiao_OperateActivity extends AppCompatActivity {
         }
 
 
-        TextView history_tv = findViewById(R.id.id_biao_downTasks_operate_history_tv);
+        TextView history_tv = findViewById(R.id.id_biao_downTasks_to_history_tv);
         history_tv.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -70,7 +71,7 @@ public class downTasksBiao_OperateActivity extends AppCompatActivity {
         }));
 
 
-        Button pressed_bnt = findViewById(R.id.id_biao_downTasks_operate_preassed_bnt);
+        CircleImageView pressed_bnt = findViewById(R.id.id_biao_downTasks_operate_back);
         pressed_bnt.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -82,7 +83,7 @@ public class downTasksBiao_OperateActivity extends AppCompatActivity {
 
 
 
-        Button sure_bnt = findViewById(R.id.id_biao_downTasks_operate_sure_bnt);
+        CircleImageView sure_bnt = findViewById(R.id.id_biao_downTasks_operate_sure);
         sure_bnt.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

@@ -24,6 +24,7 @@ import com.example.xiaobenben.R;
 import com.example.xiaobenben.biao.BlankFragment_biao;
 import com.example.xiaobenben.biao.DailyTasksBiao.dailyTasksAdapter;
 import com.example.xiaobenben.biao.DailyTasksBiao.dailyTasksBiao_NewActivity;
+import com.example.xiaobenben.control.CircleImageView;
 
 import java.util.Calendar;
 import java.util.Locale;
@@ -80,7 +81,7 @@ public class scheduleTasksBiao_NewActivity extends AppCompatActivity{
 
 
 
-        Button sure_bnt = findViewById(R.id.id_biao_scheduleTasks_new_sure);
+        CircleImageView sure_bnt = findViewById(R.id.id_biao_scheduleTasks_new_sure_bnt);
         sure_bnt.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -92,7 +93,7 @@ public class scheduleTasksBiao_NewActivity extends AppCompatActivity{
 
 
 
-        Button back_bnt = findViewById(R.id.id_biao_scheduleTasks_new_back);
+        CircleImageView back_bnt = findViewById(R.id.id_biao_scheduleTasks_new_back_bnt);
         back_bnt.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

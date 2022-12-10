@@ -9,33 +9,93 @@
     tools:context=".biao.ScheduleTasksBiao.scheduleTasksBiao_OperateActivity">
 
 
-    <FrameLayout
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="64dp"
+        android:background="#0fff0f"
         >
-        <Button
-            android:layout_gravity="left"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+        <com.example.xiaobenben.control.CircleImageView
+            android:layout_width="58dp"
+            android:layout_height="58dp"
+            android:layout_gravity="center"
             android:id="@+id/id_biao_scheduleTasks_operate_back"
-            android:text="返回"
+            android:layout_centerInParent="true"
+            android:scaleType="centerCrop"
+
+            android:src="@drawable/back"
             />
 
         <TextView
-            android:layout_gravity="center"
+            android:layout_marginStart="64dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="历史情况"
-            android:id="@+id/id_biao_scheduleTasks_operate_history"
+            android:text="我是表明"
+            android:layout_gravity="center"
+            android:id="@+id/id_biao_scheduleTasks_name_tv"
+            android:textSize="26dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:text="历史记录"
+            android:id="@+id/id_biao_scheduleTasks_to_history_tv"
             />
 
-        <Button
-            android:layout_gravity="right"
+        <com.example.xiaobenben.control.CircleImageView
+            android:layout_marginStart="50dp"
+            android:layout_width="58dp"
+            android:layout_height="58dp"
+            android:layout_gravity="center"
+            android:id="@+id/id_biao_scheduleTasks_operate_sure"
+            android:layout_centerInParent="true"
+            android:scaleType="centerCrop"
+
+            android:src="@drawable/dui4"
+            />
+
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:background="@drawable/bt2"
+        >
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/id_biao_scheduleTasks_operate_sure"
-            android:text="完成"
+            android:text="日程"
+            android:textSize="24dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="-150dp"
             />
+
+        <TextView
+            android:autoSizeMaxTextSize="32dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="预计时间"
+            android:textSize="24dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="-40dp"
+            />
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="添加日程"
+            android:layout_gravity="center"
+            android:layout_marginStart="128dp"
+            android:id="@+id/id_biao_scheduleTasks_operate_add"
+            />
+
+
+
+
 
 
 
@@ -52,13 +112,7 @@
         android:id="@+id/id_biao_scheduleTasks_lv"
         />
 
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="添加"
-            android:layout_gravity="right|bottom"
-            android:id="@+id/id_biao_scheduleTasks_operate_add"
-            />
+
 
 
     </FrameLayout>

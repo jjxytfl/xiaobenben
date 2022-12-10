@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="300dp"
+    android:layout_height="256dp">
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="128dp"
+            android:layout_height="match_parent"
+            android:gravity="center|right"
+            android:text="事件名："
+            android:textSize="20dp"
+            />
+        <EditText
+            android:layout_width="128dp"
+            android:layout_height="match_parent"
+            android:gravity="center|left"
+            android:hint="吃炸鸡"
+            android:textSize="16dp"
+            android:id="@+id/id_biao_downTasks_new_dialog_name"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="128dp"
+            android:layout_height="match_parent"
+            android:gravity="center|right"
+            android:text="预设次数："
+            android:textSize="20dp"
+            />
+
+        <EditText
+            android:layout_width="128dp"
+            android:layout_height="match_parent"
+            android:gravity="center|left"
+            android:hint="4"
+            android:textSize="16dp"
+            android:id="@+id/id_biao_downTasks_new_dialog_num"
+            />
+
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="128dp"
+            android:layout_height="match_parent"
+            android:gravity="center|right"
+            android:text="周期："
+            android:textSize="20dp"
+            />
+        <EditText
+            android:layout_width="128dp"
+            android:layout_height="match_parent"
+            android:gravity="center|left"
+            android:hint="10天"
+            android:textSize="16dp"
+            android:id="@+id/id_biao_downTasks_new_dialog_cycle"
+            />
+
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        >
+        <Button
+            android:layout_gravity="left|center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/id_biao_downTasks_dialog_new_cancel"
+            android:text="取消"
+            />
+
+        <Button
+            android:layout_gravity="right|center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/id_biao_downTasks_dialog_new_sure"
+            android:text="确定"
+            />
+
+
+    </FrameLayout>
+
+
+
+</LinearLayout>

@@ -7,37 +7,57 @@
     android:orientation="vertical"
     tools:context=".biao.DownTasksBiao.downTasksBiao_OperateActivity">
 
-    <FrameLayout
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="64dp"
-        android:orientation="vertical"
+        android:background="#0fff0f"
         >
-        <Button
-            android:layout_gravity="left"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="返回"
-            android:id="@+id/id_biao_downTasks_operate_preassed_bnt"
+        <com.example.xiaobenben.control.CircleImageView
+            android:layout_width="58dp"
+            android:layout_height="58dp"
+            android:layout_gravity="center"
+            android:id="@+id/id_biao_downTasks_operate_back"
+            android:layout_centerInParent="true"
+            android:scaleType="centerCrop"
+
+            android:src="@drawable/back"
             />
 
         <TextView
+            android:layout_marginStart="64dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="我是表明"
             android:layout_gravity="center"
+            android:id="@+id/id_biao_downTasks_name_tv"
+            android:textSize="26dp"
+            />
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="18dp"
-            android:text="历史情况"
-            android:id="@+id/id_biao_downTasks_operate_history_tv"
+            android:textSize="16dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:text="历史记录"
+            android:id="@+id/id_biao_downTasks_to_history_tv"
             />
 
-        <Button
-            android:layout_gravity="right"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="完成"
-            android:id="@+id/id_biao_downTasks_operate_sure_bnt"
+        <com.example.xiaobenben.control.CircleImageView
+            android:layout_marginStart="50dp"
+            android:layout_width="58dp"
+            android:layout_height="58dp"
+            android:layout_gravity="center"
+            android:id="@+id/id_biao_downTasks_operate_sure"
+            android:layout_centerInParent="true"
+            android:scaleType="centerCrop"
+
+            android:src="@drawable/dui4"
             />
 
-    </FrameLayout>
+
+    </LinearLayout>
+
+
 
 
     <LinearLayout

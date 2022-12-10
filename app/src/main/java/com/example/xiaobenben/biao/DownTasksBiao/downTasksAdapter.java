@@ -58,57 +58,15 @@ public class downTasksAdapter extends BaseAdapter {
             view = LayoutInflater.from(context).inflate(R.layout.item_down_tasks_new, viewGroup, false);
         }
 
-        EditText name_et = view.findViewById(R.id.id_biao_downTasks_new_item_name);
-        EditText surplus_et = view.findViewById(R.id.id_biao_downTasks_new_item_surplus);
+        TextView name_et = view.findViewById(R.id.id_biao_downTasks_new_item_name);
+        TextView surplus_et = view.findViewById(R.id.id_biao_downTasks_new_item_surplus);
         ImageButton bnt = view.findViewById(R.id.id_biao_downTasks_new_item_delete);
 
-        if(i == getCount() - 1 && sign == 1){
-            sign--;
-        }else{
-            name_et.setText(downTasksBiao.getDownTasksItemList().get(i).getName());
-            surplus_et.setText(downTasksBiao.getDownTasksItemList().get(i).getSurplus()+"");
 
-        }
-
-        name_et.addTextChangedListener(new TextWatcher() {
-            @Override
-            public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
-
-            }
-
-            @Override
-            public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
-
-            }
-
-            @Override
-            public void afterTextChanged(Editable editable) {
-                downTasksBiao.getDownTasksItemList().get(i).setName(editable.toString());
-                listener.callback_modify(downTasksBiao);
-            }
-        });
+        name_et.setText(downTasksBiao.getDownTasksItemList().get(i).getName());
+        surplus_et.setText(downTasksBiao.getDownTasksItemList().get(i).getSurplus()+"");
 
 
-        surplus_et.addTextChangedListener(new TextWatcher() {
-            @Override
-            public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
-
-            }
-
-            @Override
-            public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
-
-            }
-
-            @Override
-            public void afterTextChanged(Editable editable) {
-                if(editable.toString().length()<1){
-                    return;
-                }
-                downTasksBiao.getDownTasksItemList().get(i).setSurplus(strToInt(editable.toString(),10));
-                listener.callback_modify(downTasksBiao);
-            }
-        });
 
 
         bnt.setOnClickListener(new View.OnClickListener() {

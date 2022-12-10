@@ -7,34 +7,105 @@
     android:orientation="vertical"
     tools:context=".biao.DownTasksBiao.downTasksBiao_NewActivity">
 
-    <LinearLayout
-        android:orientation="horizontal"
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:background="#FF00FF"
+        >
+
+        <com.example.xiaobenben.control.CircleImageView
+
+
+            android:id="@+id/id_biao_downTasks_new_back_bnt"
+            android:layout_width="58dp"
+            android:layout_gravity="center|left"
+            android:layout_height="58dp"
+            android:layout_centerInParent="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="创建倒数计划表"
+            android:layout_gravity="center"
+            android:textSize="25dp"
+            />
+
+
+        <com.example.xiaobenben.control.CircleImageView
+
+            android:layout_marginStart="32dp"
+            android:id="@+id/id_biao_downTasks_new_sure_bnt"
+            android:layout_width="58dp"
+            android:layout_gravity="center|right"
+            android:layout_height="58dp"
+            android:layout_centerInParent="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/dui4" />
+
+    </FrameLayout>
+
+    <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="64dp"
         >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="消耗事件"
+            android:textSize="24dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="-150dp"
+            />
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="预设次数"
+            android:textSize="24dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="-40dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="预设周期:"
+            android:textSize="24dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="80dp"
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="7天"
+            android:textSize="24dp"
+            android:textColor="#af0f0f0f"
+            android:layout_gravity="center"
+            android:layout_marginStart="160dp"
+            />
+
+
+
+    </FrameLayout>
+
+
+
+    <FrameLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
         <Button
+            android:layout_gravity="bottom|right"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="添加"
             android:id="@+id/id_biao_downTasks_new_add_bnt"
             />
-        <Button
-            android:layout_marginStart="128dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="完成"
-            android:id="@+id/id_biao_downTasks_new_sure_bnt"
-            />
-
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:orientation="vertical"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
 
     <ListView
         android:layout_width="match_parent"
@@ -44,7 +115,7 @@
 
 
 
-    </LinearLayout>
+    </FrameLayout>
 
 
 

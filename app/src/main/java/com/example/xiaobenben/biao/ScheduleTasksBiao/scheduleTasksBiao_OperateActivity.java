@@ -25,6 +25,7 @@ import com.example.xiaobenben.R;
 import com.example.xiaobenben.biao.BlankFragment_biao;
 import com.example.xiaobenben.biao.DownTasksBiao.DownTasksBiao;
 import com.example.xiaobenben.biao.DownTasksBiao.downTasksBiao_HistoryActivity;
+import com.example.xiaobenben.control.CircleImageView;
 
 import java.util.Calendar;
 import java.util.Locale;
@@ -52,7 +53,7 @@ public class scheduleTasksBiao_OperateActivity extends AppCompatActivity {
         }
 
 
-        TextView history_tv = findViewById(R.id.id_biao_scheduleTasks_operate_history);
+        TextView history_tv = findViewById(R.id.id_biao_scheduleTasks_to_history_tv);
         history_tv.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -95,7 +96,7 @@ public class scheduleTasksBiao_OperateActivity extends AppCompatActivity {
             }
         });
 
-        Button back_bnt = findViewById(R.id.id_biao_scheduleTasks_operate_back);
+        CircleImageView back_bnt = findViewById(R.id.id_biao_scheduleTasks_operate_back);
         back_bnt.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -104,7 +105,7 @@ public class scheduleTasksBiao_OperateActivity extends AppCompatActivity {
         });
 
 
-        Button sure_bnt = findViewById(R.id.id_biao_scheduleTasks_operate_sure);
+        CircleImageView sure_bnt = findViewById(R.id.id_biao_scheduleTasks_operate_sure);
         sure_bnt.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
