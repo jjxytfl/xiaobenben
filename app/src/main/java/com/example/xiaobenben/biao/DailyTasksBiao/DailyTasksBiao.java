@@ -8,13 +8,13 @@ import java.util.List;
 
 public class DailyTasksBiao extends Biao implements Serializable {
     public List<DailyTasksItem> dailyTasksItemList;
+    private List<DailyTasksHisItem> dailyTasksHisItemList;
 
 
     public DailyTasksBiao(){
         super();
         setBiaoType("每日任务计划表");
         dailyTasksItemList = new ArrayList<>();
-        dailyTasksItemList.add(new DailyTasksItem("","","",""));
     }
 
     public void addDailyTasksItem(String n,String t,String d){
@@ -96,6 +96,19 @@ public class DailyTasksBiao extends Biao implements Serializable {
             this.details = details;
         }
     }
+
+
+
+    static class DailyTasksHisItem implements Serializable{
+        private String name;
+        private String time;
+        private String remarks;
+        private String completion;
+        private String details;
+        private String comTime;
+
+    }
+
 
 
 

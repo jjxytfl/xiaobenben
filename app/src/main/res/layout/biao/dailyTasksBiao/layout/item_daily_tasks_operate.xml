@@ -44,7 +44,7 @@
 
         android:layout_height="match_parent"
         android:hint="备注"
-        android:textSize="32dp"
+        android:textSize="24dp"
 
         android:inputType="text"
         android:lines="1"

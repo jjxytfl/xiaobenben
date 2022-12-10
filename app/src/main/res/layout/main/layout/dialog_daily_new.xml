@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="300dp"
+    android:layout_height="256dp">
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="128dp"
+            android:layout_height="match_parent"
+            android:gravity="center|right"
+            android:text="事件名字："
+            android:textSize="20dp"
+            />
+        <EditText
+            android:layout_width="75dp"
+            android:layout_height="match_parent"
+            android:gravity="center|left"
+            android:hint="夜跑"
+            android:textSize="16dp"
+            android:id="@+id/id_biao_tourTasks_new_dialog_name"
+            />
+        <Button
+            android:layout_marginStart="20dp"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:text="预设"
+            android:id="@+id/id_biao_dailyTasks_new_dialog_yushe"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="128dp"
+            android:layout_height="match_parent"
+            android:gravity="center|right"
+            android:text="开始时间："
+            android:textSize="20dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center|right"
+            android:text="21：00"
+            android:textSize="20dp"
+            android:id="@+id/id_biao_dailyTasks_new_dialog_time_tv"
+            />
+        <Button
+            android:layout_marginStart="29dp"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:text="修改"
+            android:id="@+id/id_biao_dailyTasks_new_dialog_time"
+            />
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="128dp"
+            android:layout_height="match_parent"
+            android:gravity="center|right"
+            android:text="详情："
+            android:textSize="20dp"
+            />
+        <EditText
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:gravity="center|left"
+            android:hint="锻炼身体"
+            android:textSize="16dp"
+            android:id="@+id/id_biao_dailyTasks_new_dialog_details"
+            />
+
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        >
+        <Button
+            android:layout_gravity="left|center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/id_biao_dailyTasks_dialog_new_cancel"
+            android:text="取消"
+            />
+
+        <Button
+            android:layout_gravity="right|center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/id_biao_dailyTasks_dialog_new_sure"
+            android:text="确定"
+            />
+
+
+    </FrameLayout>
+
+
+
+</LinearLayout>

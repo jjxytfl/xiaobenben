@@ -10,6 +10,7 @@ import android.view.ViewGroup;
 import android.widget.AbsListView;
 import android.widget.BaseAdapter;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.ListAdapter;
 import android.widget.TextView;
 
@@ -50,74 +51,23 @@ public class dailyTasksAdapter extends BaseAdapter{
         }
 
 
-        EditText et1 = view.findViewById(R.id.id_biao_dailyTasks_item_name_et1);
-        EditText et2 = view.findViewById(R.id.id_biao_dailyTasks_item_time_et2);
-        EditText et3 = view.findViewById(R.id.id_biao_dailyTasks_item_detail_et3);
+        TextView et1 = view.findViewById(R.id.id_biao_dailyTasks_item_name_et1);
+        TextView et2 = view.findViewById(R.id.id_biao_dailyTasks_item_time_et2);
+        TextView et3 = view.findViewById(R.id.id_biao_dailyTasks_item_detail_et3);
+        ImageButton del = view.findViewById(R.id.id_biao_dailyTasks_item_detail_del);
 
 
         et1.setText(dailyTasksBiao.getDailyTasksItemList().get(i).getName());
         et2.setText(dailyTasksBiao.getDailyTasksItemList().get(i).getTime());
         et3.setText(dailyTasksBiao.getDailyTasksItemList().get(i).getDetails());
 
-
-        et1.addTextChangedListener(new TextWatcher() {
+        del.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
-
-            }
-
-            @Override
-            public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
-
-            }
-
-            @Override
-            public void afterTextChanged(Editable editable) {
-                dailyTasksBiao_NewActivity.dailyTasksBiao.getDailyTasksItemList().get(i).setName(editable.toString());
+            public void onClick(View view) {
+                dailyTasksBiao.getDailyTasksItemList().remove(i);
+                notifyDataSetChanged();
             }
         });
-
-        et2.addTextChangedListener(new TextWatcher() {
-            @Override
-            public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
-
-            }
-
-            @Override
-            public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
-
-            }
-
-            @Override
-            public void afterTextChanged(Editable editable) {
-                dailyTasksBiao_NewActivity.dailyTasksBiao.getDailyTasksItemList().get(i).setTime(editable.toString());
-            }
-        });
-
-
-        et3.addTextChangedListener(new TextWatcher() {
-            @Override
-            public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
-
-            }
-
-            @Override
-            public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
-
-            }
-
-            @Override
-            public void afterTextChanged(Editable editable) {
-                dailyTasksBiao_NewActivity.dailyTasksBiao.getDailyTasksItemList().get(i).setDetails(editable.toString());
-            }
-        });
-
-
-
-
-
-
-
 
 
 

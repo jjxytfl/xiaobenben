@@ -12,30 +12,46 @@
         android:layout_height="64dp"
         android:background="#0fff0f"
         >
-        <ImageButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@drawable/pressed"
+        <com.example.xiaobenben.control.CircleImageView
+            android:layout_width="58dp"
+            android:layout_height="58dp"
+            android:layout_gravity="center"
+            android:id="@+id/id_biao_dailyTasks_operate_back"
+            android:layout_centerInParent="true"
+            android:scaleType="centerCrop"
+
+            android:src="@drawable/back"
             />
 
         <TextView
+            android:layout_marginStart="64dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="我是表明"
-            android:textSize="32dp"
+            android:layout_gravity="center"
+            android:id="@+id/id_biao_dailyTasks_name_tv"
+            android:textSize="26dp"
             />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="26dp"
+            android:textSize="16dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
             android:text="历史记录"
             android:id="@+id/id_biao_dailyTasks_to_history_tv"
             />
-        <ImageButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@drawable/pressed"
-            android:id="@+id/id_biao_dailyTasks_operarte_sure_imgbnt"
+
+        <com.example.xiaobenben.control.CircleImageView
+            android:layout_marginStart="50dp"
+            android:layout_width="58dp"
+            android:layout_height="58dp"
+            android:layout_gravity="center"
+            android:id="@+id/id_biao_dailyTasks_operate_sure"
+            android:layout_centerInParent="true"
+            android:scaleType="centerCrop"
+
+            android:src="@drawable/dui4"
             />
 
 
@@ -49,7 +65,7 @@
         <ListView
             android:layout_width="match_parent"
             android:layout_height="512dp"
-            android:id="@+id/id_biao_dailyTasks_operarte_lv"
+            android:id="@+id/id_biao_dailyTasks_operate_lv"
 
             />
 

@@ -18,14 +18,12 @@
         <com.example.xiaobenben.control.CircleImageView
 
 
-
+            android:id="@+id/id_ben_riji_new_imgbnt1"
             android:layout_width="64dp"
             android:layout_height="64dp"
-            android:id="@+id/id_ben_riji_new_imgbnt1"
             android:layout_centerInParent="true"
             android:scaleType="centerCrop"
-            android:src="@drawable/back"
-            />
+            android:src="@drawable/back" />
 
 
         <TextView

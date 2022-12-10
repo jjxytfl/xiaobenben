@@ -16,8 +16,9 @@
         android:background="#FF0000"
         >
         <com.example.xiaobenben.control.CircleImageView
-            android:layout_width="64dp"
-            android:layout_height="64dp"
+            android:layout_width="58dp"
+            android:layout_height="58dp"
+            android:layout_gravity="center"
             android:id="@+id/id_ben_operate_back_imgbnt"
             android:layout_centerInParent="true"
             android:scaleType="centerCrop"
@@ -76,10 +77,12 @@
         android:layout_height="64dp"
         android:id="@+id/id_ben_operate_del_fl"
         >
-        <ImageButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="50dp"
             android:background="@drawable/tab_weixin"
+            android:text="取消"
+            android:textSize="20dp"
             android:id="@+id/id_ben_operate_del_cancel_imgbnt"
             />
 
@@ -88,13 +91,16 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="128dp"
             android:id="@+id/id_ben_operate_del_tv"
-            android:textSize="32dp"
+            android:textSize="20dp"
             android:text="已选择折d15磨多"
             />
 
-        <ImageButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_gravity="right"
+            android:text="删除"
+            android:textSize="20dp"
             android:background="@drawable/tab_weixin"
             android:layout_marginStart="256dp"
             android:id="@+id/id_ben_operate_del_sure_imgbnt"

@@ -11,6 +11,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ListView;
+import android.widget.TextView;
 
 import com.example.xiaobenben.R;
 
@@ -109,6 +110,14 @@ public class BlankFragment_ben extends Fragment {
         View inflate = inflater.inflate(R.layout.fragment_blank_ben, container, false);
         lv = inflate.findViewById(R.id.id_ben_lv);
 
+
+        TextView admin_tv = inflate.findViewById(R.id.id_ben_admin);
+        admin_tv.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+            }
+        });
 
 
         lv.setAdapter(new benAdapter(benList,context));

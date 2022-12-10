@@ -15,6 +15,7 @@ import com.example.xiaobenben.R;
 import com.example.xiaobenben.ben.Ben;
 import com.example.xiaobenben.biao.BlankFragment_biao;
 import com.example.xiaobenben.biao.biao_NewActivity;
+import com.example.xiaobenben.control.CircleImageView;
 
 public class dailyTasksBiao_OperateActivity extends AppCompatActivity {
 
@@ -50,7 +51,7 @@ public class dailyTasksBiao_OperateActivity extends AppCompatActivity {
         });
 
 
-        ListView lv = findViewById(R.id.id_biao_dailyTasks_operarte_lv);
+        ListView lv = findViewById(R.id.id_biao_dailyTasks_operate_lv);
         lv.setAdapter(new dailyTasks_OperateAdapter(this, dailyTasksBiao, new dailyTasks_OperateAdapter.dailyOperateClickListener() {
             @Override
             public void callback_Completion(int i,boolean com) {
@@ -63,11 +64,20 @@ public class dailyTasksBiao_OperateActivity extends AppCompatActivity {
         }));
 
 
-        ImageButton imgbntsure = findViewById(R.id.id_biao_dailyTasks_operarte_sure_imgbnt);
+        CircleImageView imgbntsure = findViewById(R.id.id_biao_dailyTasks_operate_sure);
         imgbntsure.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 BlankFragment_biao.modify(biaoid,dailyTasksBiao);
+                onBackPressed();
+            }
+        });
+
+
+        CircleImageView imgbntback = findViewById(R.id.id_biao_dailyTasks_operate_back);
+        imgbntback.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
                 onBackPressed();
             }
         });

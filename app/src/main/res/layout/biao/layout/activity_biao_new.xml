@@ -12,6 +12,25 @@
         android:layout_height="64dp"
         android:background="#00FF0F"
         >
+        <com.example.xiaobenben.control.CircleImageView
+
+
+            android:id="@+id/id_biao_new_back"
+            android:layout_width="58dp"
+            android:layout_gravity="center"
+            android:layout_height="58dp"
+            android:layout_centerInParent="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/back" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            android:text="新建计划表"
+            android:layout_gravity="center"
+            android:layout_marginStart="100dp"
+
+            />
 
 
     </LinearLayout>
@@ -29,8 +48,7 @@
             android:layout_marginStart="64dp"
             android:layout_marginTop="64dp"
             android:text="选择计划表类型"
-            android:textSize="26dp"
-            android:background="#af0ff000"
+            android:textSize="20dp"
             />
 
 
@@ -41,7 +59,6 @@
             android:layout_marginStart="256dp"
             android:layout_marginTop="64dp"
 
-            android:background="#af0ff000"
             android:id="@+id/id_biao_new_spinner"
             />
 
@@ -51,8 +68,7 @@
             android:layout_marginStart="64dp"
             android:layout_marginTop="128dp"
             android:text="输入表名"
-            android:textSize="26dp"
-            android:background="#af0ff000"
+            android:textSize="20dp"
             />
 
         <EditText
@@ -65,16 +81,42 @@
             android:inputType="text"
             android:lines="1"
 
-            android:background="#af0ff000"
             android:id="@+id/id_biao_new_et"
             />
 
     </FrameLayout>
 
-
-    <LinearLayout
+    <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="128dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/kuang1"
+        >
+        <TextView
+            android:layout_gravity="center|top"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="计划表介绍："
+            android:textSize="20dp"
+            />
+
+        <TextView
+            android:layout_gravity="center|top"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="42dp"
+            android:id="@+id/id_biao_introduce_tv"
+            android:text="每日任务计划表：该表适用于制定每天都计划做的一些事情，比如想要养成一些好习惯：早起，跑步等等"
+            android:textSize="18dp" />
+
+
+    </FrameLayout>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
         android:background="#ff0FfF"
         >
 
@@ -84,8 +126,8 @@
             android:layout_height="64dp"
             android:id="@+id/id_biao_new_sure_imgbnt"
 
-            android:layout_marginStart="256dp"
-            android:layout_marginTop="8dp"
+            android:layout_gravity="center|right"
+            android:layout_marginRight="30dp"
 
             android:layout_centerInParent="true"
             android:scaleType="centerCrop"
@@ -94,7 +136,7 @@
             />
 
 
-    </LinearLayout>
+    </FrameLayout>
 
 
 

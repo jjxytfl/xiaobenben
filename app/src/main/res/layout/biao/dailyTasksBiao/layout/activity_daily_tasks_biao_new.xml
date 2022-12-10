@@ -12,25 +12,38 @@
         android:layout_height="64dp"
         android:background="#FF00FF"
         >
-        <ImageButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@drawable/tab_weixin"
+
+        <com.example.xiaobenben.control.CircleImageView
+
+
             android:id="@+id/id_biao_dailyTasks_new_back_imgbnt"
-            />
+            android:layout_width="58dp"
+            android:layout_gravity="center"
+            android:layout_height="58dp"
+            android:layout_centerInParent="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/back" />
+
         <TextView
+            android:layout_marginStart="32dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="创建每日任务计划表"
-            android:textSize="32dp"
+            android:layout_gravity="center"
+            android:textSize="25dp"
             />
 
-        <ImageButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@drawable/tab_weixin"
+
+        <com.example.xiaobenben.control.CircleImageView
+
+            android:layout_marginStart="32dp"
             android:id="@+id/id_biao_dailyTasks_new_sure_imgbnt"
-            />
+            android:layout_width="58dp"
+            android:layout_gravity="center"
+            android:layout_height="58dp"
+            android:layout_centerInParent="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/dui4" />
 
     </LinearLayout>
 
@@ -39,16 +52,15 @@
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-
         >
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="64dp">
+            android:layout_height="64dp"
+            android:background="@drawable/bt2">
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="64dp"
                 android:layout_weight="1"
-                android:background="#FF0f0F"
                 android:id="@+id/id_biao_dailyTasks_new_name_tv1"
                 android:text="名字"
                 android:gravity="center"
@@ -59,7 +71,6 @@
                 android:layout_width="match_parent"
                 android:layout_weight="1"
                 android:layout_height="64dp"
-                android:background="#0F00FF"
                 android:id="@+id/id_biao_dailyTasks_new_name_tv2"
                 android:text="开始时间"
                 android:gravity="center"
@@ -70,7 +81,6 @@
                 android:layout_width="match_parent"
                 android:layout_weight="0.7"
                 android:layout_height="64dp"
-                android:background="#FF00FF"
                 android:id="@+id/id_biao_dailyTasks_new_name_tv3"
                 android:text="详情"
                 android:gravity="center"
@@ -91,15 +101,16 @@
         </ListView>
 
 
-        <ImageButton
-            android:layout_width="64dp"
-            android:layout_height="64dp"
-            android:background="@drawable/pressed"
-            android:layout_gravity="center"
-            android:layout_marginTop="64dp"
-            android:id="@+id/id_biao_dailyTasks_new_add_imgbnt"
-            />
 
+        <com.example.xiaobenben.control.CircleImageView
+            android:layout_marginTop="128dp"
+            android:id="@+id/id_biao_dailyTasks_new_add_imgbnt"
+            android:layout_width="64dp"
+            android:layout_gravity="center"
+            android:layout_height="64dp"
+            android:layout_centerInParent="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/jia2" />
 
 
     </FrameLayout>

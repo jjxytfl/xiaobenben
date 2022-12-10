@@ -9,6 +9,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
+import android.widget.Button;
 import android.widget.FrameLayout;
 import android.widget.ImageButton;
 import android.widget.ListView;
@@ -21,8 +22,8 @@ import java.util.HashMap;
 
 public class ben_OperateActivity extends AppCompatActivity {
 
-    private ImageButton cancelimgbnt;
-    private ImageButton sureimgbnt;
+    private Button cancelimgbnt;
+    private Button sureimgbnt;
 
 
     public static FrameLayout fl;
