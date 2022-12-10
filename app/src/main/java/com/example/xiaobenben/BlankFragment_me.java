@@ -4,8 +4,10 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 
+import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -59,6 +61,17 @@ public class BlankFragment_me extends Fragment {
         }
     }
 
+
+    @Override
+    public void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        Log.d("123456", "onActivityResult: " + requestCode + "res" + resultCode);
+        if(requestCode == 15){
+            String sign = data.getStringExtra("sign");
+            Log.d("123456", "onActivityResult: "  + sign);
+        }
+    }
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -77,7 +90,7 @@ public class BlankFragment_me extends Fragment {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent( context, LoginActivity.class );
-                startActivity(intent);
+                startActivityForResult(intent,15);
             }
         });
 

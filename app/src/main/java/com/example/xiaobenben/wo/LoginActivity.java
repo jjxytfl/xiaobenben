@@ -9,6 +9,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.example.xiaobenben.MainActivity;
 import com.example.xiaobenben.R;
 
 public class LoginActivity extends AppCompatActivity {
@@ -32,6 +33,12 @@ public class LoginActivity extends AppCompatActivity {
                         // 判断如果用户名是123456 密码是123456就是登录成功
                         if (strUserName.equals("123456") && strPassWord.equals("123456")) {
                             Toast.makeText(LoginActivity.this, "登录成功！", Toast.LENGTH_SHORT).show();
+
+                            Intent intent = new Intent(LoginActivity.this, MainActivity.class);
+                            intent.putExtra("sign", "ok");
+                            setResult(16, intent);
+                            finish();
+
                         } else {
                             Toast.makeText(LoginActivity.this, "请输入正确的用户名或密码！", Toast.LENGTH_SHORT).show();
                         }
