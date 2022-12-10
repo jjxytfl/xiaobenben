@@ -8,26 +8,75 @@
     tools:context=".biao.TourTasksBiao.tourTasksBiao_NewActivity">
 
 
-    <LinearLayout
+    <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="64dp"
+        android:background="#FF00FF"
         >
 
-        <Button
+        <com.example.xiaobenben.control.CircleImageView
+
+
+            android:id="@+id/id_biao_tourTasks_new_back_bnt"
+            android:layout_width="58dp"
+            android:layout_gravity="center|left"
+            android:layout_height="58dp"
+            android:layout_centerInParent="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/back" />
+
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="添加"
+            android:text="创建旅游计划表"
+            android:layout_gravity="center"
+            android:textSize="25dp"
+            />
+
+
+        <com.example.xiaobenben.control.CircleImageView
+
+            android:id="@+id/id_biao_tourTasks_new_sure_bnt"
+            android:layout_width="58dp"
+            android:layout_height="58dp"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center|right"
+            android:layout_marginStart="32dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/dui4" />
+
+    </FrameLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:background="@drawable/bt2"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="旅游计划"
+            android:textSize="24dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="-80dp"
+            />
+
+
+
+
+        <Button
+            android:layout_gravity="center"
+            android:layout_marginStart="128dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:id="@+id/id_biao_tourTasks_new_add"
+            android:text="添加旅游计划"
             />
 
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="完成"
-            android:id="@+id/id_biao_tourTasks_new_sure"
-            />
 
-    </LinearLayout>
+    </FrameLayout>
+
+
+
 
 
     <LinearLayout

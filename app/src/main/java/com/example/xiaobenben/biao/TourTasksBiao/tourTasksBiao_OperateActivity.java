@@ -17,6 +17,7 @@ import com.example.xiaobenben.R;
 import com.example.xiaobenben.biao.BlankFragment_biao;
 import com.example.xiaobenben.biao.ScheduleTasksBiao.ScheduleTasksBiao;
 import com.example.xiaobenben.biao.ScheduleTasksBiao.scheduleTasksBiao_OperateActivity;
+import com.example.xiaobenben.control.CircleImageView;
 
 public class tourTasksBiao_OperateActivity extends AppCompatActivity {
     private TourTasksBiao tourTasksBiao;
@@ -53,12 +54,30 @@ public class tourTasksBiao_OperateActivity extends AppCompatActivity {
             }
         }));
 
-        Button sure_bnt = findViewById(R.id.id_biao_tourTasks_operate_sure_bnt);
+        CircleImageView sure_bnt = findViewById(R.id.id_biao_tourTasks_operate_sure);
         sure_bnt.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 BlankFragment_biao.modify(biaoid,tourTasksBiao);
                 onBackPressed();
+            }
+        });
+
+
+        CircleImageView back_bnt = findViewById(R.id.id_biao_tourTasks_operate_back);
+        back_bnt.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                onBackPressed();
+            }
+        });
+
+
+        Button add_bnt = findViewById(R.id.id_biao_tourTasks_operate_add);
+        add_bnt.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                new AddItemDialog(context).show();
             }
         });
 
@@ -114,6 +133,7 @@ public class tourTasksBiao_OperateActivity extends AppCompatActivity {
                             expenses_et.getText().toString(),
                             details_et.getText().toString()
                     );
+                    lv.setAdapter(new tourTasks_OperateAdapter(tourTasksBiao,context,listener));
                     AddItemDialog.this.dismiss();
                 }
             });

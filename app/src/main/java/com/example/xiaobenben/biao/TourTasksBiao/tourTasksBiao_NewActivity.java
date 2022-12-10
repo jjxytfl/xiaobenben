@@ -14,6 +14,7 @@ import android.widget.ListView;
 import com.example.xiaobenben.R;
 import com.example.xiaobenben.biao.BlankFragment_biao;
 import com.example.xiaobenben.biao.ScheduleTasksBiao.scheduleTasksBiao_NewActivity;
+import com.example.xiaobenben.control.CircleImageView;
 
 public class tourTasksBiao_NewActivity extends AppCompatActivity {
     private TourTasksBiao tourTasksBiao;
@@ -60,7 +61,7 @@ public class tourTasksBiao_NewActivity extends AppCompatActivity {
 
 
 
-        Button sure_bnt = findViewById(R.id.id_biao_tourTasks_new_sure);
+        CircleImageView sure_bnt = findViewById(R.id.id_biao_tourTasks_new_sure_bnt);
         sure_bnt.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -69,6 +70,14 @@ public class tourTasksBiao_NewActivity extends AppCompatActivity {
             }
         });
 
+
+        CircleImageView back_bnt = findViewById(R.id.id_biao_tourTasks_new_back_bnt);
+        back_bnt.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                onBackPressed();
+            }
+        });
 
     }
 

@@ -10,6 +10,7 @@
         android:orientation="horizontal"
         >
         <TextView
+            android:layout_marginStart="64dp"
             android:layout_width="128dp"
             android:layout_height="match_parent"
             android:gravity="center|right"
@@ -34,6 +35,7 @@
         android:orientation="horizontal"
         >
         <TextView
+            android:layout_marginStart="64dp"
             android:layout_width="128dp"
             android:layout_height="match_parent"
             android:gravity="center|right"
@@ -57,6 +59,7 @@
         android:orientation="horizontal"
         >
         <TextView
+            android:layout_marginStart="64dp"
             android:layout_width="128dp"
             android:layout_height="match_parent"
             android:gravity="center|right"
@@ -82,6 +85,7 @@
         >
 
         <Button
+            android:layout_marginStart="32dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"

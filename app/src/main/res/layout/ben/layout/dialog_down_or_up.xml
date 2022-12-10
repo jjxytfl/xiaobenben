@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="128dp">
+    <TextView
+        android:layout_marginTop="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:textSize="20dp"
+        android:text="        上传本地数据至云或下载云数据至本地"
+        />
+
+    <Button
+        android:layout_gravity="bottom|right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="取消"
+        android:id="@+id/id_wo_down_or_up_can"
+        />
+
+    <Button
+        android:layout_gravity="bottom|center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="下载"
+        android:id="@+id/id_wo_down_or_up_down"
+        />
+
+    <Button
+        android:layout_gravity="bottom|left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="上传"
+        android:id="@+id/id_wo_down_or_up_up"
+        />
+
+
+</FrameLayout>
