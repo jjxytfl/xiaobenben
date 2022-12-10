@@ -28,6 +28,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.xiaobenben.R;
+import com.example.xiaobenben.control.CircleImageView;
 import com.example.xiaobenben.zhong.ClockActivity;
 
 import java.util.ArrayList;
@@ -95,7 +96,7 @@ public class BlankFragment_zhong extends Fragment {
         });
 
 
-        Button button  = (Button) view.findViewById(R.id.id_add_but);
+        CircleImageView button  = view.findViewById(R.id.id_zhong_tomato_add_but);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -110,7 +111,7 @@ public class BlankFragment_zhong extends Fragment {
         });
 
 
-        Button button_go  = (Button) view.findViewById(R.id.id_go_but);
+        CircleImageView button_go  = view.findViewById(R.id.id_zhong_tomato_go_but);
         button_go.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
