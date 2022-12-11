@@ -6,34 +6,19 @@ import androidx.fragment.app.Fragment;
 import androidx.viewpager2.widget.ViewPager2;
 
 
-import android.content.ContentResolver;
 import android.content.Context;
 import android.content.Intent;
-import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
-import android.net.Uri;
 import android.os.Bundle;
-import android.provider.MediaStore;
-import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 
-import com.bumptech.glide.Glide;
-import com.bumptech.glide.load.engine.DiskCacheStrategy;
 import com.example.xiaobenben.ben.Ben;
 import com.example.xiaobenben.ben.BlankFragment_ben;
 import com.example.xiaobenben.biao.BlankFragment_biao;
-import com.example.xiaobenben.wo.LoginActivity;
-import com.example.xiaobenben.zhong.ClockActivity;
+import com.example.xiaobenben.wo.BlankFragment_me;
 import com.example.xiaobenben.zhong.Tomato.BlankFragment_zhong;
 
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.IOException;
-import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.List;
 

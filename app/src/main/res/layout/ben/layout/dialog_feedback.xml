@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="256dp"
+    android:layout_height="150dp">
+
+
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="19dp"
+        android:text="问题描述："/>
+    <EditText
+        android:layout_marginTop="32dp"
+        android:layout_width="256dp"
+        android:layout_height="64dp"
+        android:hint="100字以内"
+        android:textSize="16dp"
+        android:id="@+id/id_wo_feedback_et"
+        />
+
+
+
+    <Button
+        android:layout_gravity="bottom|right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="提交反馈"
+        android:id="@+id/id_wo_feedback_sure"
+        />
+
+
+    <Button
+        android:layout_gravity="bottom|left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="取消"
+        android:id="@+id/id_wo_feedback_can"
+        />
+
+</FrameLayout>
