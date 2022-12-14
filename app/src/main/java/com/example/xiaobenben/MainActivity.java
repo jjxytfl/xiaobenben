@@ -8,6 +8,8 @@ import androidx.viewpager2.widget.ViewPager2;
 
 import android.content.Context;
 import android.content.Intent;
+import android.icu.text.SimpleDateFormat;
+import android.icu.util.Calendar;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
@@ -16,15 +18,17 @@ import android.widget.LinearLayout;
 import com.example.xiaobenben.ben.Ben;
 import com.example.xiaobenben.ben.BlankFragment_ben;
 import com.example.xiaobenben.biao.BlankFragment_biao;
+import com.example.xiaobenben.biao.biaoTime;
 import com.example.xiaobenben.wo.BlankFragment_me;
 import com.example.xiaobenben.zhong.Tomato.BlankFragment_zhong;
 
+import java.text.ParseException;
 import java.util.ArrayList;
 import java.util.List;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
     private ViewPager2 viewPager;
-
+    public static biaoTime biaoTime = new biaoTime();
 
 
     private LinearLayout ll1,ll2,ll3,ll4,llcur;
@@ -84,7 +88,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         iv4 = findViewById(R.id.tab_iv_weixin4);
 
         llcur = ll1;
-        llcur.setBackgroundColor(0xaf00ff00);
+        llcur.setBackgroundColor(0xdf00ff00);
 
 
 
@@ -93,6 +97,48 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     }
 
+    /**
+     * 根据当前日期获得是星期几
+     * time=yyyy-MM-dd
+     * @return
+     */
+    public static String getWeek() {
+        biaoTime biaoTime = new biaoTime();
+        String time = biaoTime.getDate();
+        String Week = "";
+        SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd");
+        Calendar c = Calendar.getInstance();
+        try {
+            c.setTime(format.parse(time));
+        } catch (ParseException e) {
+            e.printStackTrace();
+        }
+
+        int wek=c.get(Calendar.DAY_OF_WEEK);
+
+        if (wek == 1) {
+            Week += "星期日";
+        }
+        if (wek == 2) {
+            Week += "星期一";
+        }
+        if (wek == 3) {
+            Week += "星期二";
+        }
+        if (wek == 4) {
+            Week += "星期三";
+        }
+        if (wek == 5) {
+            Week += "星期四";
+        }
+        if (wek == 6) {
+            Week += "星期五";
+        }
+        if (wek == 7) {
+            Week += "星期六";
+        }
+        return Week;
+    }
 
 
 
@@ -230,7 +276,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 //tiaozhuan();
                 break;
         }
-        llcur.setBackgroundColor(0xcf00ff00);
+        llcur.setBackgroundColor(0xdf00ff00);
     }
 
     @Override

@@ -40,14 +40,15 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="我是时间啊啊啊啊"
-        android:textSize="8dp"
+        android:textSize="12dp"
         android:id="@+id/id_ben_riji_tv3"
-        android:layout_marginStart="258dp"
+        android:layout_marginStart="230dp"
         android:layout_marginTop="46dp"
         />
 
     <CheckBox
-        android:layout_width="64dp"
+        android:layout_gravity="right"
+        android:layout_width="32dp"
         android:layout_height="32dp"
         android:background="#ff0000"
         android:id="@+id/id_ben_riji_cb"

@@ -39,6 +39,9 @@ public class dailyTasksBiao_OperateActivity extends AppCompatActivity {
             dailyTasksBiao = (DailyTasksBiao) getIntent().getSerializableExtra("biao");
         }
 
+        TextView name_tv = findViewById(R.id.id_biao_dailyTasks_name_tv);
+        name_tv.setText(dailyTasksBiao.getBiaoName());
+
 
         TextView historyTv = findViewById(R.id.id_biao_dailyTasks_to_history_tv);
         historyTv.setOnClickListener(new View.OnClickListener() {

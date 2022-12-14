@@ -1,6 +1,7 @@
 package com.example.xiaobenben.biao.ScheduleTasksBiao;
 
 import com.example.xiaobenben.biao.Biao;
+import com.example.xiaobenben.biao.biaoTime;
 
 import java.io.Serializable;
 import java.util.ArrayList;
@@ -55,12 +56,12 @@ public class ScheduleTasksBiao extends Biao {
     static class ScheduleTasksComItem  implements Serializable{
         public String ComDate;
         public String ComTime;
-        public String date;
+        public biaoTime date;
         public String time;
         public String task;
 
         public String getDate(){
-            return "2001-06-02";
+            return date.getDate();
         }
 
         public String getTask() {
@@ -70,7 +71,7 @@ public class ScheduleTasksBiao extends Biao {
         public ScheduleTasksComItem(String comDate, String comTime, String date, String time, String task) {
             ComDate = comDate;
             ComTime = comTime;
-            this.date = date;
+            this.date = new biaoTime();
             this.time = time;
             this.task = task;
         }

@@ -57,7 +57,8 @@ public class biaoAdapter extends BaseAdapter {
 
         tv1.setText(biaoList.get(i).getBiaoName());
         tv2.setText("类型:"+biaoList.get(i).getBiaoType());
-        tv3.setText("创建时间:"+biaoList.get(i).getNewTime());
+        tv3.setText("创建时间:"+biaoList.get(i).getNewTime().getDate());
+        //tv3.setText("创建时间:"+"2022-12-09");
 
 
         tv1.setOnClickListener(new View.OnClickListener() {

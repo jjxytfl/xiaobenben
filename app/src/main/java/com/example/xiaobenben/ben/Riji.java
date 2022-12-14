@@ -1,12 +1,14 @@
 package com.example.xiaobenben.ben;
 
+import com.example.xiaobenben.biao.biaoTime;
+
 import java.io.Serializable;
 
 public class Riji implements Serializable {
     //一下内容全是瞎扯
     //string 限制长度  65535
     private String Content;
-    private String NewTime;
+    private biaoTime NewTime;
     private String jianjie1;
     private String jianjie2;
 
@@ -15,13 +17,14 @@ public class Riji implements Serializable {
     }
 
     public void setNewTime(String newTime) {
-        NewTime = newTime;
+        NewTime = new biaoTime();
     }
 
     public Riji(){
         this.Content = "str";
         this.jianjie1 = "156165";
         this.jianjie2 = "1456a5";
+        NewTime = new biaoTime();
     }
 
     public Riji(String nr, String jianjie1, String jianjie2) {
@@ -34,6 +37,7 @@ public class Riji implements Serializable {
         this.Content = str;
         this.jianjie1 = "156165";
         this.jianjie2 = "1456a5";
+        NewTime = new biaoTime();
     }
 
 
@@ -51,7 +55,7 @@ public class Riji implements Serializable {
     }
 
     public String getNewTime() {
-        return NewTime;
+        return NewTime.getDate();
     }
 
 

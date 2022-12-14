@@ -4,24 +4,25 @@ import java.io.Serializable;
 
 public class Biao implements Serializable {
     private String biaoName;
-    private String newTime;
     private String biaoType;
+    private biaoTime newTime;
+
 
     public Biao(){
         this.biaoType = "null";
         this.biaoName = "biaoName";
-        this.newTime = "newTime";
+        this.newTime = new biaoTime();
     }
 
     public Biao(String biaoName, String newTime) {
         this.biaoType = "null";
         this.biaoName = biaoName;
-        this.newTime = newTime;
+        this.newTime = new biaoTime();
     }
 
     public Biao(String biaoName, String newTime, String biaoType) {
         this.biaoName = biaoName;
-        this.newTime = newTime;
+        this.newTime = new biaoTime();
         this.biaoType = biaoType;
     }
 
@@ -37,7 +38,7 @@ public class Biao implements Serializable {
         return biaoName;
     }
 
-    public String getNewTime() {
+    public biaoTime getNewTime() {
         return newTime;
     }
 
@@ -45,9 +46,6 @@ public class Biao implements Serializable {
         this.biaoName = biaoName;
     }
 
-    public void setNewTime(String newTime) {
-        this.newTime = newTime;
-    }
 
     public float getCompletionRate(){
         //获取完成率

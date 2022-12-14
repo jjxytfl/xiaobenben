@@ -43,6 +43,8 @@ public class downTasksBiao_OperateActivity extends AppCompatActivity {
             downTasksBiao = (DownTasksBiao) getIntent().getSerializableExtra("biao");
         }
 
+        TextView name_tv = findViewById(R.id.id_biao_downTasks_name_tv);
+        name_tv.setText(downTasksBiao.getBiaoName());
 
         TextView history_tv = findViewById(R.id.id_biao_downTasks_to_history_tv);
         history_tv.setOnClickListener(new View.OnClickListener() {

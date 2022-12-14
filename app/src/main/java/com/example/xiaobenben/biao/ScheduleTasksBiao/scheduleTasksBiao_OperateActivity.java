@@ -52,6 +52,9 @@ public class scheduleTasksBiao_OperateActivity extends AppCompatActivity {
             scheduleTasksBiao = (ScheduleTasksBiao) getIntent().getSerializableExtra("biao");
         }
 
+        TextView name_tv = findViewById(R.id.id_biao_scheduleTasks_name_tv);
+        name_tv.setText(scheduleTasksBiao.getBiaoName());
+
 
         TextView history_tv = findViewById(R.id.id_biao_scheduleTasks_to_history_tv);
         history_tv.setOnClickListener(new View.OnClickListener() {

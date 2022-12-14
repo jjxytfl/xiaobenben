@@ -58,7 +58,39 @@
     </LinearLayout>
 
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        >
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="事件名"
+            android:textSize="18dp"
+            />
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="剩余次数"
+            android:textSize="18dp"
+            />
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="消耗"
+            android:textSize="18dp"
+            />
 
+
+
+
+    </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"

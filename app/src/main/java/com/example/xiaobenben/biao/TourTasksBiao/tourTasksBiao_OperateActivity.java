@@ -40,6 +40,9 @@ public class tourTasksBiao_OperateActivity extends AppCompatActivity {
             tourTasksBiao = (TourTasksBiao) getIntent().getSerializableExtra("biao");
         }
 
+        TextView name_tv = findViewById(R.id.id_biao_tourTasks_name_tv);
+        name_tv.setText(tourTasksBiao.getBiaoName());
+
         lv = findViewById(R.id.id_biao_tourTasks_operate_lv);
         lv.setAdapter(new tourTasks_OperateAdapter(tourTasksBiao,context,listener = new tourTasks_OperateAdapter.tourOperateClickListener() {
             @Override

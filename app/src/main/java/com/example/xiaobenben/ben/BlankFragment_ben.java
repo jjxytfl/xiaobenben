@@ -13,7 +13,9 @@ import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.TextView;
 
+import com.example.xiaobenben.MainActivity;
 import com.example.xiaobenben.R;
+import com.example.xiaobenben.biao.biaoTime;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -109,6 +111,17 @@ public class BlankFragment_ben extends Fragment {
 
         View inflate = inflater.inflate(R.layout.fragment_blank_ben, container, false);
         lv = inflate.findViewById(R.id.id_ben_lv);
+
+
+        TextView rq_tv = inflate.findViewById(R.id.title1);
+        TextView xq_tv = inflate.findViewById(R.id.title2);
+        TextView tq_tv = inflate.findViewById(R.id.title3);
+        TextView wd_tv = inflate.findViewById(R.id.title4);
+
+        rq_tv.setText(MainActivity.biaoTime.getrq());
+        xq_tv.setText(MainActivity.biaoTime.getxq());
+        tq_tv.setText(MainActivity.biaoTime.gettq());
+        wd_tv.setText(MainActivity.biaoTime.getwd());
 
 
         TextView admin_tv = inflate.findViewById(R.id.id_ben_admin);

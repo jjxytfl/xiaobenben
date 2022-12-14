@@ -15,6 +15,7 @@ import android.widget.ImageButton;
 import android.widget.ListView;
 import android.widget.TextView;
 
+import com.example.xiaobenben.MainActivity;
 import com.example.xiaobenben.R;
 import com.example.xiaobenben.biao.DailyTasksBiao.dailyTasksBiao_NewActivity;
 
@@ -74,6 +75,16 @@ public class BlankFragment_biao extends Fragment {
 
         biao_lv = view.findViewById(R.id.id_biao_lv);
         biao_lv.setAdapter(new biaoAdapter(context,biaoList));
+
+        TextView rq_tv = view.findViewById(R.id.title1);
+        TextView xq_tv = view.findViewById(R.id.title2);
+        TextView tq_tv = view.findViewById(R.id.title3);
+        TextView wd_tv = view.findViewById(R.id.title4);
+
+        rq_tv.setText(MainActivity.biaoTime.getrq());
+        xq_tv.setText(MainActivity.biaoTime.getxq());
+        tq_tv.setText(MainActivity.biaoTime.gettq());
+        wd_tv.setText(MainActivity.biaoTime.getwd());
 
 
         biao_lv.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {

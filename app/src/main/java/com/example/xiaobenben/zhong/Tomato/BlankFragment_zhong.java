@@ -27,6 +27,7 @@ import android.widget.SeekBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.xiaobenben.MainActivity;
 import com.example.xiaobenben.R;
 import com.example.xiaobenben.control.CircleImageView;
 import com.example.xiaobenben.zhong.ClockActivity;
@@ -175,6 +176,18 @@ public class BlankFragment_zhong extends Fragment {
                 v = (LinearLayout) convertView;
                 holder = (BlankFragment_zhong.TimeEntryAdapter.TimeEntryViewHolder) v.getTag();
             }
+
+            TextView rq_tv = v.findViewById(R.id.title1);
+            TextView xq_tv = v.findViewById(R.id.title2);
+            TextView tq_tv = v.findViewById(R.id.title3);
+            TextView wd_tv = v.findViewById(R.id.title4);
+
+            rq_tv.setText(MainActivity.biaoTime.getrq());
+            xq_tv.setText(MainActivity.biaoTime.getxq());
+            tq_tv.setText(MainActivity.biaoTime.gettq());
+            wd_tv.setText(MainActivity.biaoTime.getwd());
+
+
 
             TimeEntry item = getItem(position);
             int minute = item.getDuration() / 60;

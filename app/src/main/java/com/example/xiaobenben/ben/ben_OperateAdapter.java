@@ -82,7 +82,7 @@ public class ben_OperateAdapter extends BaseAdapter {
 
         tv1.setText(ben_OperateActivity.ben.getRijiList().get(i).getJianjie1());
         tv2.setText(ben_OperateActivity.ben.getRijiList().get(i).getJianjie2());
-        tv3.setText(ben_OperateActivity.ben.getRijiList().get(i).getContent());
+        tv3.setText(ben_OperateActivity.ben.getRijiList().get(i).getNewTime());
 
 //        view.setOnLongClickListener(new View.OnLongClickListener() {
 //            @Override

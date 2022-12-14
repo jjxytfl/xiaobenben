@@ -87,6 +87,7 @@ public class BlankFragment_me extends Fragment {
     private TextView new_tv;
     private TextView gogo_tv;
     private TextView login_tv;
+    private TextView id;
     private CircleImageView icon;
 
 
@@ -99,6 +100,7 @@ public class BlankFragment_me extends Fragment {
             Log.d("123456", "onActivityResult: "  + sign);
             login_tv.setText("已登录用户名tfl");
             icon.setImageResource(R.drawable.tx);
+            id.setText("id:20190206117");
         }
     }
 
@@ -110,6 +112,7 @@ public class BlankFragment_me extends Fragment {
             root = inflater.inflate(R.layout.fragment_blank_me, container, false);
         }
 
+        id = root.findViewById(R.id.id_wo_dl_jj);
         icon = root.findViewById(R.id.id_wo_dl_icon);
         own_tv = root.findViewById(R.id.id_wo_own);
         down_or_up_tv = root.findViewById(R.id.id_wo_down_or_up);
